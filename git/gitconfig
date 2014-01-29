@@ -1,0 +1,159 @@
+[user]
+  name = Dom Smith
+  email = dom@teneightfive.com
+
+[alias]
+  ############ ADD ############
+  a = add
+  aa = add --all
+  ae = add --edit
+  ai = add --interactive
+  ap = add --patch
+  au = add --update
+  amend = commit --amend -C HEAD
+  authors = "!git log --pretty=format:%aN | sort | uniq -c | sort -rn"
+  ############ BRANCH ############
+  b = branch
+  br = branch -vv
+  bd = branch -D
+  bm = branch -m
+  ba = branch -a
+  bav = branch -a -vv
+  ############ COMMIT ############
+  c = commit
+  ca = commit --amend
+  cm = commit --message
+  changes = diff --name-status -r
+  check = diff --check
+  ############ CHECKOUT
+  co = checkout
+  cob = checkout -b
+  cot = checkout -t
+  com = "!git checkout master; git pull;"
+  ############ CHERRY PICK ############
+  pick = cherry-pick
+  cp = cherry-pick
+  cps = cherry-pick -s
+  ############ CLONE ############
+  cl = clone
+  ############ DIFF ############
+  d = diff
+  dc = diff --cached
+  ds = diff --staged
+  dt = difftool
+  div = divergence
+  h = help
+  ############ FETCH ############
+  f = fetch
+  fa = fetch --all
+  prune = fetch --prune
+  ############ LOGGING ############
+  la = "!git config -l | grep alias | cut -c 7-"
+  #g = log --oneline --decorate --color=always --graph
+  lb = log --oneline --decorate --color=always
+  #l = "!git log --graph --pretty='tformat:%C(yellow)%h{%C(green)%ar{%C(bold blue)%an{%C(red)%d%C(reset) %s' $* | column -t -s '{' | less -FXRS"
+  lg = log --graph --pretty=format:'%C(blue)%h%Creset %C(red)%cr%Creset %C(auto)%d%Creset %s %C(cyan)[%an]%Creset' --abbrev-commit --date=relative
+  lgs = log --graph --pretty=format:'%C(blue)%h%Creset %C(red)%ad%Creset %C(auto)%d%Creset %s %C(cyan)[%an]%Creset' --abbrev-commit --date=short
+  lgl = log --graph --pretty=format:'%C(blue)%h%Creset %C(red)%ad%Creset %C(auto)%d%Creset %s %C(cyan)[%an]%Creset' --abbrev-commit --date=local
+  ls = log --pretty=format:"%C(blue)%h%C(auto)%d\\ %Creset%s%C(cyan)\\ [%cn]" --decorate
+  ll = log --pretty=format:"%C(blue)%h\\ %C(red)%ad%C(auto)%d\\ %Creset%s%C(cyan)\\ [%cn]" --decorate --numstat --date=relative
+  lls = log --pretty=format:"%C(blue)%h\\ %C(red)%ad%C(auto)%d\\ %Creset%s%C(cyan)\\ [%cn]" --decorate --numstat --date=short
+  lll = log --pretty=format:"%C(blue)%h\\ %C(red)%ad%C(auto)%d\\ %Creset%s%C(cyan)\\ [%cn]" --decorate --numstat --date=local
+  ld = log --pretty=format:"%C(blue)%h\\ %C(red)%ad%C(auto)%d\\ %Creset%s%C(cyan)\\ [%cn]" --decorate --date=relative
+  lds = log --pretty=format:"%C(blue)%h\\ %C(red)%ad%C(auto)%d\\ %Creset%s%C(cyan)\\ [%cn]" --decorate --date=short
+  ldl = log --pretty=format:"%C(blue)%h\\ %C(red)%ad%C(auto)%d\\ %Creset%s%C(cyan)\\ [%cn]" --decorate --date=local
+  ra = !git log --graph --abbrev-commit --date=relative -20 --all --pretty='format:%C(yellow)%h%Creset -%C(red)%d%Creset %s %Cgreen(%ar) %C(bold blue)<%an>%Creset'
+  ls-ignored = ls-files --exclude-standard --ignored --others
+  lf = diff-tree --no-commit-id --name-only -r
+  ############ MERGE ############
+  m = merge -s recursive -X patience
+  mm = merge --no-ff
+  msg = commit --allow-empty -m
+  news = log -p HEAD@{1}..HEAD@{0}
+  ############ PUSH ############
+  p = push
+  pt = push --tags
+  pu = push --set-upstream
+  pf = push --force
+  ############ PULL ############
+  pl = pull
+  plr = pull --rebase
+  ############ REMOTES ############
+  prune-remotes = "!for remote in `git remote`; do git remote prune $remote; done"
+  r = remote
+  ############ REBASE ############
+  rb = rebase
+  rba = rebase --abort
+  rbc = rebase --continue
+  rbs = rebase --skip
+  rbi = rebase --interactive
+  rh = reset --hard
+  ru = remote update --prune
+  ############ STATUS ############
+  s = status --short --branch
+  #ss = status
+  sl = shortlog
+  ############ SUBMODULE ############
+  sm = submodule
+  sma = submodule add
+  smu = submodule update --init
+  ############ STASH ############
+  st = stash
+  sta = stash apply
+  sts = stash save
+  stl = stash list
+  stp = stash pop
+
+  undo = reset --soft HEAD@{1}
+  wd = diff --word-diff="color"
+  wdc = diff --word-diff="color" --cached
+
+[push]
+  default = upstream
+
+[color]
+  ui = auto
+
+[color "branch"]
+  current = green
+  local = red
+  remote = yellow
+  plain = magenta
+
+[color "decorate"]
+  branch = green
+  remoteBranch = yellow
+  tag = cyan
+  stash = blue
+  HEAD = magenta
+
+[color "diff"]
+  plain = normal
+  #meta = white
+  frag = blue
+  #func = cyan
+  old = red
+  new = green
+  commit = green bold
+
+[color "status"]
+  #header =
+  #added = yellow
+  #changed = green
+  #untracked = cyan
+  #branch =
+  #nobranch =
+
+[github]
+  user = teneightfive
+
+[core]
+  excludesfile = ~/.gitignore_global
+
+[difftool "sourcetree"]
+  cmd = opendiff \"$LOCAL\" \"$REMOTE\"
+  path =
+
+[mergetool "sourcetree"]
+  cmd = /Applications/SourceTree.app/Contents/Resources/opendiff-w.sh \"$LOCAL\" \"$REMOTE\" -ancestor \"$BASE\" -merge \"$MERGED\"
+  trustExitCode = true
