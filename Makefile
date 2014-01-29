@@ -11,6 +11,7 @@ symlinks:
 	@ln -sf $(DIR)/bash/functions ~/.functions
 	@ln -sf $(DIR)/bash/path ~/.path
 	@ln -sf $(DIR)/bash/git-completion.bash ~/.git-completion.bash
+	@ln -nsf $(DIR)/bin ~/bin
 	@ln -nsf $(DIR)/vim/vim ~/.vim
 	@ln -sf $(DIR)/vim/vimrc ~/.vimrc
 	@ln -nsf $(DIR)/vim/plugin ~/.vim/plugin
@@ -35,3 +36,9 @@ brew: Brewfile
 
 node:
 	ruby $(DIR)/scripts/npm_bundles.rb
+
+cask:
+	@bash ./cask/.cask
+
+osx:
+	@bash ./scripts/.osx
