@@ -28,7 +28,12 @@ Files are symlinked into the proper location, and have the `.` added. For exampl
 - Run `make gems`
 
 ### cask
--
+- Add applications to `cask/.cask`
+- Run `make cask`
+
+### osx defaults
+- Amend defaults as required in `scipts/.osx`
+- Run `make osx`
 
 ### app config files
 - ST
