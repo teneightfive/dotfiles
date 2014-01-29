@@ -9,6 +9,7 @@ npms = {
   "dalek-cli" => "dalek",
   "gh" => "",
   "bower" => "",
+  "yo" => "",
   "jshint" => "",
   "express" => "",
   "nodemon" => "",
