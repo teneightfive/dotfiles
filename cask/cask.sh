@@ -7,18 +7,18 @@ function installcask() {
 }
 
 # installcask dropbox
-installcask google-chrome
-installcask google-chrome-canary
-installcask imagealpha
-installcask imageoptim
-installcask iterm2
+# installcask google-chrome
+# installcask google-chrome-canary
+# installcask imagealpha
+# installcask imageoptim
+# installcask iterm2
 # installcask macvim
 # installcask miro-video-converter
-# installcask sublime-text
-installcask the-unarchiver
-installcask ukelele
-installcask virtualbox
-installcask vlc
+# installcask sublime-text 3???
+# installcask the-unarchiver
+# installcask ukelele
+# installcask virtualbox
+# installcask vlc
 
 ## Other potentials to check?
 # Alfred 2
@@ -35,3 +35,13 @@ installcask vlc
 # sequel-pro
 # skype
 # one-password
+# brackets
+# coda 2
+# transmit / filezilla
+# google drive
+# mamp pro
+# MS Office
+# parallels
+# safari
+# opera
+

@@ -37,8 +37,8 @@ brew: Brewfile
 node:
 	ruby $(DIR)/scripts/npm_bundles.rb
 
-cask:
-	@bash ./cask/.cask
+casks:
+	@bash ./cask/cask.sh
 
 osx:
-	@bash ./scripts/.osx
+	@./scripts/osx.sh
