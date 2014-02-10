@@ -53,6 +53,7 @@ alias bu="bundle"
 alias bui="bundle install"
 
 # Opening dotfiles
+alias .files="st ~/dotfiles"
 alias .bp="st ~/.bash_profile"
 alias .bpt="st ~/.bash_prompt"
 alias .al="st ~/.aliases"
