@@ -6,42 +6,40 @@ function installcask() {
   brew cask install "${@}" 2> /dev/null
 }
 
-# installcask dropbox
-# installcask google-chrome
-# installcask google-chrome-canary
-# installcask imagealpha
-# installcask imageoptim
-# installcask iterm2
-# installcask macvim
-# installcask miro-video-converter
-# installcask sublime-text 3???
-# installcask the-unarchiver
-# installcask ukelele
-# installcask virtualbox
-# installcask vlc
+installcask google-chrome
+installcask google-drive
+installcask google-chrome-canary
+installcask imagealpha
+installcask imageoptim
+installcask iterm2
+installcask sublime-text # 3???
+installcask the-unarchiver
+installcask ukelele
+installcask virtualbox
+installcask vlc
+
+installcask alfred
+installcask dash
+installcask dash
+installcask charles
+installcask firefox
+installcask evernote
+installcask hipchat
+installcask sourcetree
+installcask spotify
+installcask sequel-pro
+installcask skype
+installcask brackets
+installcask onepassword
+installcask transmit
+installcask filezilla
+installcask mamp
+installcask paralells
+installcask opera
 
 ## Other potentials to check?
-# Alfred 2
-# Dash
-# Charles Proxy
-# Firefox
-# Evernote
-# HipChat
 # Moom
-# SourceTree
-# Spotify
 # TweetDeck
-# Xcode???
-# sequel-pro
-# skype
-# one-password
-# brackets
-# coda 2
-# transmit / filezilla
-# google drive
-# mamp pro
+# Mamp pro
 # MS Office
-# parallels
-# safari
-# opera
-
+# Safari
