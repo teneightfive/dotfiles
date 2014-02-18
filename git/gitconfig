@@ -80,6 +80,7 @@
   plr = pull --rebase
   ############ REMOTES ############
   prune-remotes = "!for remote in `git remote`; do git remote prune $remote; done"
+  prune-tags = fetch origin --prune --tags
   r = remote
   ############ REBASE ############
   rb = rebase
