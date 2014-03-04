@@ -7,11 +7,10 @@ alias ~="cd ~" # `cd` is probably faster to type though
 alias -- -="cd -"
 
 # Directory Shortcuts
-alias d="cd ~/Documents/Dropbox"
 alias dl="cd ~/Downloads"
 alias dt="cd ~/Desktop"
 alias p="cd ~/Projects"
-alias si="cd ~/Sites"
+alias s="cd ~/Sites"
 
 # DSD Directory Shortcuts
 alias ff="cd ~/Sites/formfinder"
@@ -21,13 +20,17 @@ alias depl="cd ~/Sites/deployment"
 alias lpa="cd ~/Sites/opg-lpa"
 alias lpaapi="cd ~/Sites/opg-lpa-api"
 alias lpafe="cd ~/Sites/opg-lpa-front-end"
-alias mojbp="cd ~/Sites/moj_boilerplate"
+alias moj="cd ~/Sites/moj_template"
 alias tk="cd ~/Sites/moj_frontend_tookit"
 alias tkg="cd ~/Sites/moj_frontend_tookit_gem"
+alias cla="cd ~/Sites/cla_frontend"
+alias clabe="cd ~/Sites/cla_backend"
+alias dot="cd ~/dotfiles"
 
 # General Shortcuts
 alias cl="clear"
 alias h="history"
+alias be="bundle exec"
 alias j="jobs"
 alias vi="vim"
 alias svi="sudo vi"
@@ -53,12 +56,7 @@ alias bu="bundle"
 alias bui="bundle install"
 
 # Opening dotfiles
-alias .files="st ~/dotfiles"
-alias .bp="st ~/.bash_profile"
-alias .bpt="st ~/.bash_prompt"
-alias .al="st ~/.aliases"
-alias .func="st ~/.functions"
-alias .gc="st ~/.gitconfig"
+alias .f="st ~/dotfiles"
 
 # Apps
 alias st="subl"
