@@ -7,6 +7,7 @@ npms = {
   "coffee-script" => "coffee",
   "grunt-cli" => "grunt",
   "dalek-cli" => "dalek",
+  "gulp" => "",
   "gh" => "",
   "bower" => "",
   "yo" => "",
