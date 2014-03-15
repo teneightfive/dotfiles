@@ -1,18 +1,18 @@
 {
-  "installed_packages":
-  [
-    "BracketHighlighter",
-    "Can I Use",
-    "CoffeeCompile",
-    "Dotfiles Syntax Highlighting",
-    "Emmet",
-    "Emmet Css Snippets",
-    "HTML-CSS-JS Prettify",
-    "JSHint",
-    "JSHint Gutter",
-    "Package Control",
-    "Sass",
-    "SideBarEnhancements",
-    "STProjectMaker"
-  ]
+	"installed_packages":
+	[
+		"BracketHighlighter",
+		"Can I Use",
+		"CoffeeCompile",
+		"Dotfiles Syntax Highlighting",
+		"Emmet",
+		"Emmet Css Snippets",
+		"HTML-CSS-JS Prettify",
+		"JSHint",
+		"JSHint Gutter",
+		"Package Control",
+		"Sass",
+		"SideBarEnhancements",
+		"STProjectMaker"
+	]
 }
