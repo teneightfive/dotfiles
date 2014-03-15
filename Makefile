@@ -12,9 +12,9 @@ symlinks:
 	@ln -sf $(DIR)/bash/path ~/.path
 	@ln -sf $(DIR)/bash/git-completion.bash ~/.git-completion.bash
 	@ln -nsf $(DIR)/bin ~/bin
-	@ln -nsf $(DIR)/vim/vim ~/.vim
-	@ln -sf $(DIR)/vim/vimrc ~/.vimrc
+	@ln -nsf $(DIR)/vim ~/.vim
 	@ln -nsf $(DIR)/vim/plugin ~/.vim/plugin
+	@ln -sf $(DIR)/vim/vimrc ~/.vimrc
 	@ln -sf $(DIR)/tmux/tmux.conf ~/.tmux.conf
 	@ln -sf $(DIR)/git/gitconfig ~/.gitconfig
 	@ln -sf $(DIR)/git/gitignore_global ~/.gitignore_global
