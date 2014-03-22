@@ -8,6 +8,11 @@ function grci() {
   npm install --save-dev grunt-contrib-"$@"
 }
 
+# npm package list
+function npmls() {
+  npm ls "$@" | grep ^[└├]
+}
+
 # GIT
 function gcob() {
   git checkout -b "$@" && git push -u origin "$@"
