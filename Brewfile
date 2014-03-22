@@ -10,7 +10,6 @@ install ack
 install git
 install git-extras
 install node
-install phantomjs
 install mongodb
 install redis
 install wget
