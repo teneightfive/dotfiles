@@ -2,6 +2,9 @@
 export PATH="/usr/local/bin:$PATH:/usr/local/sbin:$HOME/bin:/Applications/Postgres.app/Contents/MacOS/bin"
 export PATH=/usr/local/bin:/usr/local/sbin:${PATH}
 
+# npm
+export PATH=/usr/local/share/npm/bin:$PATH
+
 # Add RVM to PATH for scripting
 PATH=$PATH:$HOME/.rvm/bin
 
