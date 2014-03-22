@@ -15,7 +15,9 @@ npms = {
   "express" => "",
   "nodemon" => "",
   "mocha" => "",
-  "sails" => ""
+  "sails" => "",
+  "phantomjs" => "",
+  "casperjs" => ""
 }
 
 npms.each do |mod, command|
@@ -27,4 +29,4 @@ npms.each do |mod, command|
 end
 
 # always run the very latest npm, not just the one that was bundled into Node
-`npm install npm -g --silent`
+# `npm install npm -g --silent`
