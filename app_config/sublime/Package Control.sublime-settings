@@ -1,9 +1,11 @@
 {
   "installed_packages":
   [
+    "Better CoffeeScript",
     "BracketHighlighter",
     "Can I Use",
     "CoffeeCompile",
+    "Djaneiro",
     "Dotfiles Syntax Highlighting",
     "Emmet",
     "Emmet Css Snippets",
