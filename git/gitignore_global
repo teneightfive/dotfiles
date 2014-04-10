@@ -49,3 +49,7 @@ npm-debug.log
 # Cache #
 ######################
 .sass-cache/
+
+# ENV Files #
+######################
+.env
