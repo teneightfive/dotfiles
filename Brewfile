@@ -11,9 +11,11 @@ install git
 install git-extras
 install node
 install mongodb
+install postgresql
 install redis
 install wget
 install tmux
+install reattach-to-user-namespace
 install tree
 install youtube-dl
 
