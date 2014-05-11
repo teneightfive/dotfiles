@@ -5,6 +5,7 @@
 		"Can I Use",
 		"CoffeeCompile",
 		"Djaneiro",
+		"DocBlockr",
 		"Dotfiles Syntax Highlighting",
 		"Emmet",
 		"Emmet Css Snippets",
@@ -12,9 +13,12 @@
 		"Jade",
 		"JSHint",
 		"JSHint Gutter",
+		"Mustang Extended Color Scheme",
 		"Package Control",
 		"Sass",
 		"SideBarEnhancements",
-		"STProjectMaker"
+		"STProjectMaker",
+		"Theme - Centurion Blue",
+		"Theme - Soda"
 	]
 }
