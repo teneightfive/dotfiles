@@ -3,7 +3,7 @@ export PATH="/usr/local/bin:$PATH:/usr/local/sbin:$HOME/bin:/Applications/Postgr
 export PATH=/usr/local/bin:/usr/local/sbin:${PATH}
 
 # npm
-export PATH=/usr/local/share/npm/bin:$PATH
+# export PATH=/usr/local/share/npm/bin:$PATH
 
 # Add RVM to PATH for scripting
 PATH=$PATH:$HOME/.rvm/bin
