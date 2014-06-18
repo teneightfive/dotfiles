@@ -1,25 +1,35 @@
 {
 	"installed_packages":
 	[
+		"Alignment",
+		"AngularJS",
+		"Better CoffeeScript",
 		"BracketHighlighter",
 		"Can I Use",
+		"ChangeQuotes",
 		"CoffeeCompile",
 		"Djaneiro",
 		"DocBlockr",
 		"Dotfiles Syntax Highlighting",
 		"Emmet",
 		"Emmet Css Snippets",
+		"Git Conflict Resolver",
 		"GitGutter",
+		"Handlebars",
 		"HTML-CSS-JS Prettify",
 		"Jade",
 		"JSHint",
 		"JSHint Gutter",
+		"MultiEditUtils",
 		"Mustang Extended Color Scheme",
 		"Package Control",
 		"Sass",
+		"SCSS",
 		"SideBarEnhancements",
 		"STProjectMaker",
 		"Theme - Centurion Blue",
-		"Theme - Soda"
+		"Theme - Soda",
+		"Theme - Spacegray",
+		"Tomorrow Color Schemes"
 	]
 }
