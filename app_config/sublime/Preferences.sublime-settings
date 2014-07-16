@@ -21,6 +21,7 @@
 	],
 	"bold_folder_labels": true,
 	"caret_style": "smooth",
+  "close_windows_when_empty": true,
 	"color_scheme": "Packages/specialsboard/Special Boards - Special Edition.tmtheme",
 	"copy_with_empty_selection": true,
 	"create_window_at_startup": false,
@@ -62,7 +63,7 @@
 		"node_modules",
 		".sass-cache"
 	],
-	"font_size": 10.0,
+	"font_size": 10,
 	"gutter": true,
 	"highlight_line": true,
 	"highlight_modified_tabs": true,
