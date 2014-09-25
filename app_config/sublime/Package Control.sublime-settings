@@ -11,6 +11,7 @@
 		"Djaneiro",
 		"DocBlockr",
 		"Dotfiles Syntax Highlighting",
+		"EditorConfig",
 		"EJS",
 		"Emmet",
 		"Emmet Css Snippets",
@@ -21,10 +22,12 @@
 		"Jade",
 		"JSHint",
 		"JSHint Gutter",
+		"List stylesheet variables",
 		"Markdown Preview",
 		"MultiEditUtils",
 		"Mustang Extended Color Scheme",
 		"Package Control",
+		"PlainTasks",
 		"Sass",
 		"SCSS",
 		"SideBarEnhancements",
@@ -32,6 +35,7 @@
 		"Theme - Centurion Blue",
 		"Theme - Soda",
 		"Theme - Spacegray",
+		"ToDone",
 		"Tomorrow Color Schemes"
 	]
 }
