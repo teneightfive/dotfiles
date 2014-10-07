@@ -20,6 +20,7 @@
 		"*.zip"
 	],
 	"bold_folder_labels": true,
+	"caret_extra_width": 0,
 	"caret_style": "smooth",
 	"close_windows_when_empty": true,
 	"color_scheme": "Packages/specialsboard/Special Boards - Special Edition.tmtheme",
@@ -87,8 +88,7 @@
 	"spell_check": false,
 	"tab_completion": true,
 	"tab_size": 2,
-  "theme": "Seti.sublime-theme",
-  "caret_extra_width": 0, // to have a wider/thicker caret
+	"theme": "Seti.sublime-theme",
 	"translate_tabs_to_spaces": true,
 	"tree_animation_enabled": false,
 	"trim_automatic_white_space": true,
