@@ -1,4 +1,7 @@
 {
+	"in_process_packages":
+	[
+	],
 	"installed_packages":
 	[
 		"Alignment",
@@ -28,12 +31,13 @@
 		"Mustang Extended Color Scheme",
 		"Package Control",
 		"PlainTasks",
+		"Ruby Slim",
 		"Sass",
 		"SCSS",
 		"Seti_UI",
 		"SideBarEnhancements",
 		"STProjectMaker",
-		"Theme - Centurion Blue",
+		"Theme - Centurion",
 		"Theme - Soda",
 		"Theme - Spacegray",
 		"ToDone",
