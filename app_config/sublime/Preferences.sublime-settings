@@ -23,7 +23,7 @@
 	"caret_extra_width": 0,
 	"caret_style": "smooth",
 	"close_windows_when_empty": true,
-	"color_scheme": "Packages/specialsboard/Special Boards - Special Edition.tmtheme",
+	"color_scheme": "Packages/User/SublimeLinter/Special Boards - Special Edition (SL).tmTheme",
 	"copy_with_empty_selection": true,
 	"create_window_at_startup": false,
 	"detect_indentation": false,
