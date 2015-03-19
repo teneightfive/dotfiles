@@ -24,6 +24,7 @@ symlinks:
 	@ln -sf $(DIR)/app_config/sublime/"Default (OSX).sublime-keymap" ~/"Library/Application Support/Sublime Text 3/Packages/User/Default (OSX).sublime-keymap"
 	@ln -sf $(DIR)/app_config/sublime/"Package Control.sublime-settings" ~/"Library/Application Support/Sublime Text 3/Packages/User/Package Control.sublime-settings"
 	@ln -sf $(DIR)/app_config/sublime/Preferences.sublime-settings ~/"Library/Application Support/Sublime Text 3/Packages/User/Preferences.sublime-settings"
+	@ln -sf $(DIR)/app_config/sublime/snippets ~/"Library/Application Support/Sublime Text 3/Packages/User/snippets"
 
 ensure_brew:
 	ruby $(DIR)/scripts/ensure_homebrew.rb
