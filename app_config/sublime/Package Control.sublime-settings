@@ -6,6 +6,7 @@
 	[
 		"Alignment",
 		"AngularJS",
+		"Babel",
 		"Better CoffeeScript",
 		"BracketHighlighter",
 		"Can I Use",
@@ -29,6 +30,7 @@
 		"Markdown Preview",
 		"MultiEditUtils",
 		"Mustang Extended Color Scheme",
+		"Oceanic Next Color Scheme",
 		"Package Control",
 		"PlainTasks",
 		"Ruby Slim",
