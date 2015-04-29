@@ -4,22 +4,24 @@ puts "Running Node version: #{`node --version`}"
 npms = {
   # module name => module command
   # leave command blank if they are the same
-  "coffee-script" => "coffee",
-  "grunt-cli" => "grunt",
-  "dalek-cli" => "dalek",
-  "phantomjs" => "",
-  "capserjs" => "",
-  "gulp" => "",
-  "gh" => "",
   "bower" => "",
-  "yo" => "",
-  "jshint" => "",
+  "casperjs" => "",
+  "coffee-script" => "coffee",
+  "dalek-cli" => "dalek",
   "express" => "",
-  "nodemon" => "",
+  "gh" => "",
+  "grunt-cli" => "grunt",
+  "gulp" => "",
+  "html2jade" => "",
+  "hubot" => "",
+  "jshint" => "",
+  "keybase" => "",
   "mocha" => "",
-  "sails" => "",
+  "nodemon" => "",
   "phantomjs" => "",
-  "casperjs" => ""
+  "protractor" => "",
+  "sails" => "",
+  "yo" => "",
 }
 
 npms.each do |mod, command|
