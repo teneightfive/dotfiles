@@ -1,35 +1,63 @@
-# Make sure we’re using the latest Homebrew
-update
-
-# Upgrade any already-installed formulae
-upgrade
-
-# install ruby-build
-# install rbenv
-install ack
-install git
-install git-extras
-install node
-install mongodb
-install postgresql
-install redis
-install wget
-install tmux
-install reattach-to-user-namespace
-install tree
-install youtube-dl
-
-# Install Bash 4
-install bash
-
-# Install more recent versions of some OS X tools
-install vim --override-system-vi
-tap homebrew/dupes
-install homebrew/dupes/grep
-tap josegonzalez/homebrew-php
-install php55
-
-tap homebrew/versions
-
-# Remove outdated versions from the cellar
-cleanup
+tap 'homebrew/bundle'
+tap 'homebrew/versions'
+tap 'phinze/cask'
+brew 'ack'
+brew 'autoconf'
+brew 'automake'
+brew 'bash'
+brew 'bash-completion2'
+brew 'brew-cask'
+brew 'cloog-ppl015'
+brew 'curl'
+brew 'faac'
+brew 'ffmpeg'
+brew 'freetype'
+brew 'freexl'
+brew 'gcc46'
+brew 'gdal'
+brew 'gdbm'
+brew 'geos'
+brew 'giflib'
+brew 'git'
+brew 'git-extras'
+brew 'git-flow'
+brew 'gmp4'
+brew 'gnupg'
+brew 'jpeg'
+brew 'json-c'
+brew 'lame'
+brew 'libevent'
+brew 'libgeotiff'
+brew 'libgpg-error'
+brew 'libksba'
+brew 'liblwgeom'
+brew 'libmpc08'
+brew 'libpng'
+brew 'libspatialite'
+brew 'libtiff'
+brew 'libtool'
+brew 'libxml2'
+brew 'libyaml'
+brew 'lzlib'
+brew 'mongodb'
+brew 'mpfr2'
+brew 'node'
+brew 'openssl'
+brew 'ossp-uuid'
+brew 'pkg-config'
+brew 'postgresql'
+brew 'ppl011'
+brew 'proj'
+brew 'python'
+brew 'readline'
+brew 'reattach-to-user-namespace'
+brew 'redis'
+brew 'scons'
+brew 'selenium-server-standalone'
+brew 'sqlite'
+brew 'tmux'
+brew 'vim'
+brew 'wget'
+brew 'x264'
+brew 'xvid'
+brew 'youtube-dl'
