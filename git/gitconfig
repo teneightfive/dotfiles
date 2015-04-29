@@ -6,34 +6,24 @@
   ############ ADD ############
   a = add
   aa = add --all
-  ae = add --edit
-  ai = add --interactive
-  ap = add --patch
-  au = add --update
   amend = commit --amend -C HEAD
   authors = "!git log --pretty=format:%aN | sort | uniq -c | sort -rn"
   ############ BRANCH ############
   b = branch
-  br = branch -vv
+  ba = branch --all
+  bav = branch --all -vv
   bd = branch -D
-  bm = branch -m
-  ba = branch -a
-  bav = branch -a -vv
+  bm = branch --move
+  br = branch -vv
   ############ COMMIT ############
   c = commit
   ca = commit --amend
   cm = commit --message
-  changes = diff --name-status -r
-  check = diff --check
-  ############ CHECKOUT
+  ############ CHECKOUT ############
   co = checkout
   cob = checkout -b
-  cot = checkout -t
-  com = "!git checkout master; git pull;"
   ############ CHERRY PICK ############
   pick = cherry-pick
-  cp = cherry-pick
-  cps = cherry-pick -s
   ############ CLONE ############
   cl = clone
   ############ DIFF ############
@@ -41,17 +31,13 @@
   dc = diff --cached
   ds = diff --staged
   dt = difftool
-  div = divergence
-  h = help
   ############ FETCH ############
   f = fetch
   fa = fetch --all
   prune = fetch --prune
   ############ LOGGING ############
   la = "!git config -l | grep alias | cut -c 7-"
-  #g = log --oneline --decorate --color=always --graph
   lb = log --oneline --decorate --color=always
-  #l = "!git log --graph --pretty='tformat:%C(yellow)%h{%C(green)%ar{%C(bold blue)%an{%C(red)%d%C(reset) %s' $* | column -t -s '{' | less -FXRS"
   lg = log --graph --pretty=format:'%C(blue)%h%Creset %C(red)%cr%Creset %C(auto)%d%Creset %s %C(cyan)[%an]%Creset' --abbrev-commit --date=relative
   lgs = log --graph --pretty=format:'%C(blue)%h%Creset %C(red)%ad%Creset %C(auto)%d%Creset %s %C(cyan)[%an]%Creset' --abbrev-commit --date=short
   lgl = log --graph --pretty=format:'%C(blue)%h%Creset %C(red)%ad%Creset %C(auto)%d%Creset %s %C(cyan)[%an]%Creset' --abbrev-commit --date=local
@@ -68,8 +54,6 @@
   ############ MERGE ############
   m = merge -s recursive -X patience
   mm = merge --no-ff
-  msg = commit --allow-empty -m
-  news = log -p HEAD@{1}..HEAD@{0}
   ############ PUSH ############
   p = push
   pt = push --tags
@@ -89,26 +73,18 @@
   rbs = rebase --skip
   rbi = rebase --interactive
   rh = reset --hard
-  ru = remote update --prune
   ############ STATUS ############
   s = status --short --branch
-  #ss = status
-  sl = shortlog
-  ############ SUBMODULE ############
-  sm = submodule
-  sma = submodule add
-  smu = submodule update --init
   ############ STASH ############
   st = stash
   sta = stash apply
   sts = stash save
   stl = stash list
   stp = stash pop
-
+  ############ MISC ############
   undo = reset --soft HEAD@{1}
-  wd = diff --word-diff="color"
-  wdc = diff --word-diff="color" --cached
-
+  ignored = !git ls-files -v | grep "^[[:lower:]]"
+  
 [push]
   default = upstream
 
