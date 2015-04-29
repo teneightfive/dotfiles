@@ -5,7 +5,10 @@ gems = %w{
   sass
   rake
   bundler
+  capistrano
+  haml2slim
   jekyll
+  middleman
   shotgun
 }
 

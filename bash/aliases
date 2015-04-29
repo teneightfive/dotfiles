@@ -12,77 +12,79 @@ alias dt="cd ~/Desktop"
 alias p="cd ~/Projects"
 alias s="cd ~/Sites"
 
-# DSD Directory Shortcuts
-alias depl="cd ~/Sites/moj/deployment"
-alias lpa="cd ~/Sites/moj/opg-lpa"
-alias lpaapi="cd ~/Sites/moj/opg-lpa-api"
-alias lpafe="cd ~/Sites/moj/opg-lpa-front-end"
-alias mojt="cd ~/Sites/moj/moj_template"
-alias tk="cd ~/Sites/moj/moj_frontend_tookit"
-alias tkg="cd ~/Sites/moj/moj_frontend_tookit_gem"
-alias claf="cd ~/Sites/moj/cla_frontend"
-alias clap="cd ~/Sites/moj/cla_public"
-alias clab="cd ~/Sites/moj/cla_backend"
-alias clad="cd ~/Sites/moj/cal-deploy"
-alias dot="cd ~/dotfiles"
-
-# General Shortcuts
-alias cl="clear"
-alias h="history"
-alias be="bundle exec"
-alias hu="heroku"
-alias j="jobs"
-alias vi="vim"
-alias svi="sudo vi"
+# dotfiles
+alias df="cd ~/dotfiles"
 alias reload="source ~/.bash_profile"
 
-# Git
-alias g="git"
-alias gut="git"
-alias got="git"
-alias gti="git"
-alias gca="git add --all && git commit" # stage & commit all
-alias gs="git s" # status
-
-# NodePM, Bower & Bundle
-alias npmi="npm install"
-alias npmg="npm install -g"
-alias npmu="npm update"
-alias npmr="npm uninstall"
-alias npmrg="npm uninstall -g"
-alias bo="bower"
-alias boi="bower install"
-alias bu="bundle"
-alias bui="bundle install"
-
-# Opening dotfiles
-alias .f="st ~/dotfiles"
-
-# Apps
+# general / apps
+alias cl="clear"
+alias h="history"
+alias j="jobs"
+alias v="vim"
+alias sv="sudo v"
 alias st="subl"
 alias chr="open /Applications/Google\ Chrome.app"
 
-alias fp="echo -e '                       _______...\n                   .-‘”..........``~.\n               ,.-”..................“-.\n             ,/........................”:\n           ,?............................\ \n          /..............................,}\n         /...........................,:\`^\`.}\n        /..........................,:”..../\n       ?...__......................:\`...../\n       /__.(...“~-,_.............,:\`...../\n      /(_..”~,_....“~,_..........:\`...._/\n     {._$;_...”=,_....“-,_...-~/~},.~”/.}\n      ((...*~_....”=-._...“;,./\`./”...../\n       \\\`~,...“~.,..........\`...}....../\n      (..\`=-,,....\`............(...\_,-”\n      /.\`~,...\`-................\\../^\\ \n       \\\`~.*-,...................|/...\,__\n,,_     }.>-._\..................|........\`=~-,.. \n...\`=~-,_\\_...\`\\,.................\\.............. \n..........\`=~-,,.\\,................\\............. \n................\`:,,..............\`\\.......__.... \n...................\`=-,..........,%\`>--==\`\`...... \n...................._\\......_,-%....\`\\........... \n..................,<\`._|_,-&\`\`........\`\\.........'"
+# git
+alias g="git"
+alias ga="git add"
+alias gaa="git aa"
+alias gca="git add --all && git commit" # stage & commit all
+alias gc="git c"
+alias gcm="git cm"
+alias gs="git s" # status
+alias gpu="git push"
+alias gpl="git pull"
+alias gpo="git pull origin"
+alias gum="gco master && gpo"
+alias gt="git tag"
 
-# Detect which `ls` flavor is in use
-if ls --color > /dev/null 2>&1; then # GNU `ls`
-  colorflag="--color"
-else # OS X `ls`
-  colorflag="-G"
-fi
+# ruby
+alias be="bundle exec"
+alias bi="bundle install"
+alias rk="rake"
 
-# List all files colorized in long format
-alias l="ls -lF ${colorflag}"
+# npm
+alias n="node"
+alias ni="npm install"
+alias nis="npm install --save"
+alias nisd="npm install --save-dev"
+alias nig="npm install -g"
+alias nui="npm uninstall"
+alias nuig="npm uninstall -g"
+alias nu="npm update"
+alias nl="npm link"
+alias nr="npm run"
+alias nt="npm test"
+alias ns="npm start"
 
-# List all files colorized in long format, including dot files
-alias la="ls -laF ${colorflag}"
+# karma
+alias ks="karma start --no-auto-watch --no-single-run"
+alias kr="karma run"
 
-# List only directories
-alias lsd='ls -lF ${colorflag} | grep "^d"'
+# bower
+alias bo="bower"
+alias boi="bower install"
 
-# Always use color output for `ls`
-alias ls="command ls ${colorflag}"
-export LS_COLORS='no=00:fi=00:di=01;34:ln=01;36:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arj=01;31:*.taz=01;31:*.lzh=01;31:*.zip=01;31:*.z=01;31:*.Z=01;31:*.gz=01;31:*.bz2=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.jpg=01;35:*.jpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.avi=01;35:*.fli=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.ogg=01;35:*.mp3=01;35:*.wav=01;35:'
+# jekyll
+alias js="jekyll --server"
+
+# middleman
+alias mm="middleman server"
+alias mmb="middleman build"
+
+# vagrant
+alias vup="vagrant up"
+alias vhalt="vagrant halt"
+alias vssh="vagrant ssh"
+
+# misc
+alias topcmds='cat ~/.bash_history | cut -d ";" -f 2 | sed "s, .*,," | sort | uniq -c | sort -n | tail -rn 30'
+
+# list files
+alias l="ls -lF ${colorflag}" # List all files colorized in long format
+alias la="ls -laF ${colorflag}" # List all files colorized in long format, including dot files
+alias ld='ls -lF ${colorflag} | grep "^d"' # List only directories
 
 # Enable aliases to be sudo’ed
 alias sudo='sudo '
@@ -116,9 +118,6 @@ alias lscleanup="/System/Library/Frameworks/CoreServices.framework/Frameworks/La
 # View HTTP traffic
 alias sniff="sudo ngrep -d 'en1' -t '^(GET|POST) ' 'tcp and port 80'"
 alias httpdump="sudo tcpdump -i en1 -n -s 0 -w - | grep -a -o -E \"Host\: .*|GET \/.*\""
-
-# Canonical hex dump; some systems have this symlinked
-command -v hd > /dev/null || alias hd="hexdump -C"
 
 # OS X has no `md5sum`, so use `md5` as a fallback
 command -v md5sum > /dev/null || alias md5sum="md5"
@@ -159,9 +158,6 @@ alias spotoff="sudo mdutil -a -i off"
 # Enable Spotlight
 alias spoton="sudo mdutil -a -i on"
 
-# PlistBuddy alias, because sometimes `defaults` just doesn’t cut it
-alias plistbuddy="/usr/libexec/PlistBuddy"
-
 # Ring the terminal bell, and put a badge on Terminal.app’s Dock icon
 # (useful when executing time-consuming commands)
 alias badge="tput bel"
@@ -179,11 +175,17 @@ done
 # Make Grunt print stack traces by default
 command -v grunt > /dev/null && alias grunt="grunt --stack"
 
+# Lock the screen (when going AFK)
+alias afk="/System/Library/CoreServices/Menu\ Extras/User.menu/Contents/Resources/CGSession -suspend"
+
 # Stuff I never really use but cannot delete either because of http://xkcd.com/530/
 alias stfu="osascript -e 'set volume output muted true'"
 alias pumpitup="osascript -e 'set volume 10'"
-alias hax="growlnotify -a 'Activity Monitor' 'System error' -m 'WTF R U DOIN'"
 
 # Kill all the tabs in Chrome to free up memory
 # [C] explained: http://www.commandlinefu.com/commands/view/402/exclude-grep-from-your-grepped-output-of-ps-alias-included-in-description
 alias chromekill="ps ux | grep '[C]hrome Helper --type=renderer' | grep -v extension-process | tr -s ' ' | cut -d ' ' -f2 | xargs kill"
+
+
+# FACEPALM
+alias fp="echo -e '                       _______...\n                   .-‘”..........``~.\n               ,.-”..................“-.\n             ,/........................”:\n           ,?............................\ \n          /..............................,}\n         /...........................,:\`^\`.}\n        /..........................,:”..../\n       ?...__......................:\`...../\n       /__.(...“~-,_.............,:\`...../\n      /(_..”~,_....“~,_..........:\`...._/\n     {._$;_...”=,_....“-,_...-~/~},.~”/.}\n      ((...*~_....”=-._...“;,./\`./”...../\n       \\\`~,...“~.,..........\`...}....../\n      (..\`=-,,....\`............(...\_,-”\n      /.\`~,...\`-................\\../^\\ \n       \\\`~.*-,...................|/...\,__\n,,_     }.>-._\..................|........\`=~-,.. \n...\`=~-,_\\_...\`\\,.................\\.............. \n..........\`=~-,,.\\,................\\............. \n................\`:,,..............\`\\.......__.... \n...................\`=-,..........,%\`>--==\`\`...... \n...................._\\......_,-%....\`\\........... \n..................,<\`._|_,-&\`\`........\`\\.........'"
