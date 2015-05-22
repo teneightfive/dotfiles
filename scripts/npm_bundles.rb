@@ -14,6 +14,7 @@ npms = {
   "gulp" => "",
   "html2jade" => "",
   "hubot" => "",
+  "jscs" => "",
   "jshint" => "",
   "keybase" => "",
   "mocha" => "",
