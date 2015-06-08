@@ -9,6 +9,7 @@ npms = {
   "coffee-script" => "coffee",
   "dalek-cli" => "dalek",
   "express" => "",
+  "express-generator@4" => "express",
   "gh" => "",
   "grunt-cli" => "grunt",
   "gulp" => "",
@@ -22,7 +23,7 @@ npms = {
   "phantomjs" => "",
   "protractor" => "",
   "sails" => "",
-  "strongloop" => "",
+  "strongloop" => "slc",
   "yo" => "",
 }
 
@@ -30,9 +31,6 @@ npms.each do |mod, command|
   cmd = (command == "" ? mod : command)
   if `which #{cmd}` == ""
     puts "Installing #{mod}"
-    `npm install #{mod} -g --silent`
+    `npm install #{mod} -g`
   end
 end
-
-# always run the very latest npm, not just the one that was bundled into Node
-`npm install npm -g --silent`
