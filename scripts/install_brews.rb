@@ -4,16 +4,12 @@ brews = %w{
   autoconf
   automake
   bash
-  bash-completion2
-  brew-cask
-  cloog-ppl015
   curl
   elasticsearch
   faac
   ffmpeg
   freetype
   freexl
-  gcc46
   gdal
   gdbm
   geos
@@ -21,7 +17,6 @@ brews = %w{
   git
   git-extras
   git-flow
-  gmp4
   gnupg
   jpeg
   json-c
@@ -31,7 +26,6 @@ brews = %w{
   libgpg-error
   libksba
   liblwgeom
-  libmpc08
   libpng
   libspatialite
   libtiff
@@ -40,13 +34,11 @@ brews = %w{
   libyaml
   lzlib
   mongodb
-  mpfr2
   node
   openssl
   ossp-uuid
   pkg-config
   postgresql
-  ppl011
   proj
   python
   readline
