@@ -8,6 +8,7 @@ brews = %w{
   brew-cask
   cloog-ppl015
   curl
+  elasticsearch
   faac
   ffmpeg
   freetype
