@@ -4,7 +4,10 @@ brews = %w{
   autoconf
   automake
   bash
+  boot2docker
   curl
+  docker
+  docker-compose
   elasticsearch
   faac
   ffmpeg
