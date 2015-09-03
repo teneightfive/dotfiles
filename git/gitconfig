@@ -106,36 +106,26 @@
 
 [color "diff"]
   plain = normal
-  #meta = white
   frag = blue
-  #func = cyan
   old = red
   new = green
   commit = green bold
-
-[color "status"]
-  #header =
-  #added = yellow
-  #changed = green
-  #untracked = cyan
-  #branch =
-  #nobranch =
 
 [github]
   user = teneightfive
 
 [core]
   excludesfile = ~/.gitignore_global
-	editor = subl -n -w
+  editor = subl -n -w
 
 [difftool "sourcetree"]
-	cmd = opendiff \"$LOCAL\" \"$REMOTE\"
-	path = 
+  cmd = opendiff \"$LOCAL\" \"$REMOTE\"
+  path = 
 
 [mergetool "sourcetree"]
-	cmd = /Applications/SourceTree.app/Contents/Resources/opendiff-w.sh \"$LOCAL\" \"$REMOTE\" -ancestor \"$BASE\" -merge \"$MERGED\"
-	trustExitCode = true
+  cmd = /Applications/SourceTree.app/Contents/Resources/opendiff-w.sh \"$LOCAL\" \"$REMOTE\" -ancestor \"$BASE\" -merge \"$MERGED\"
+  trustExitCode = true
 [filter "media"]
-	clean = git media clean %f
-	smudge = git media smudge %f
-	required = true
+  clean = git media clean %f
+  smudge = git media smudge %f
+  required = true
