@@ -19,6 +19,7 @@
   c = commit
   ca = commit --amend
   cm = commit --message
+  cf = commit --fixup
   ############ CHECKOUT ############
   co = checkout
   cob = checkout -b
@@ -72,6 +73,7 @@
   rbc = rebase --continue
   rbs = rebase --skip
   rbi = rebase --interactive
+  rbia = rebase --interactive --autosquash
   rh = reset --hard
   ############ STATUS ############
   s = status --short --branch
