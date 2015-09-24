@@ -1,4 +1,5 @@
 {
+	"bootstrapped": true,
 	"in_process_packages":
 	[
 	],
@@ -13,6 +14,7 @@
 		"Can I Use",
 		"ChangeQuotes",
 		"CoffeeCompile",
+		"Cucumber",
 		"DashDoc",
 		"Djaneiro",
 		"DocBlockr",
@@ -21,6 +23,7 @@
 		"EJS",
 		"Emmet",
 		"Emmet Css Snippets",
+		"Gherkin (Cucumber) Formatter",
 		"Git Conflict Resolver",
 		"GitGutter",
 		"Handlebars",
