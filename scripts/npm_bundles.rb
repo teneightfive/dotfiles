@@ -5,14 +5,15 @@ npms = {
   # module name => module command
   # leave command blank if they are the same
   "bower" => "",
+  "browser-sync" => "",
   "casperjs" => "",
   "coffee-script" => "coffee",
   "dalek-cli" => "dalek",
   "express" => "",
-  "express-generator@4" => "express",
   "gh" => "",
   "grunt-cli" => "grunt",
   "gulp" => "",
+  "handlebars" => "",
   "html2jade" => "",
   "hubot" => "",
   "jscs" => "",

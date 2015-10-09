@@ -6,6 +6,7 @@ gems = %w{
   rake
   bundler
   capistrano
+  foreman
   haml2slim
   jekyll
   middleman
