@@ -1,6 +1,6 @@
 DIR=~/dotfiles
 
-all: symlinks ensure_brew brew node gems 
+all: symlinks brew node gems 
 
 symlinks:
 	@ln -sf $(DIR)/bash/aliases ~/.aliases
@@ -29,7 +29,8 @@ ensure_brew:
 	ruby $(DIR)/scripts/ensure_homebrew.rb
 
 brew: ensure_brew
-	ruby $(DIR)/scripts/install_brews.rb
+	brew tap Homebrew/bundle
+	brew bundle
 
 node:
 	ruby $(DIR)/scripts/npm_bundles.rb
