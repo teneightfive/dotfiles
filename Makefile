@@ -12,14 +12,9 @@ symlinks:
 	@ln -sf $(DIR)/bash/path ~/.path
 	@ln -sf $(DIR)/bash/git-completion.bash ~/.git-completion.bash
 	@ln -nsf $(DIR)/bin ~/bin
-	@ln -nsf $(DIR)/vim ~/.vim
-	@ln -sf $(DIR)/vim/vimrc ~/.vimrc
-	@ln -sf $(DIR)/tmux/tmux.conf ~/.tmux.conf
 	@ln -sf $(DIR)/git/gitconfig ~/.gitconfig
 	@ln -sf $(DIR)/git/gitignore_global ~/.gitignore_global
 	@ln -sf $(DIR)/gem/gemrc ~/.gemrc
-	@ln -sf $(DIR)/task/taskrc ~/.taskrc
-	@ln -sf $(DIR)/ctags/ctags ~/.ctags
 	@ln -sf $(DIR)/app_config/sublime/"Default (OSX).sublime-keymap" ~/"Library/Application Support/Sublime Text 3/Packages/User/Default (OSX).sublime-keymap"
 	@ln -sf $(DIR)/app_config/sublime/"Package Control.sublime-settings" ~/"Library/Application Support/Sublime Text 3/Packages/User/Package Control.sublime-settings"
 	@ln -sf $(DIR)/app_config/sublime/Preferences.sublime-settings ~/"Library/Application Support/Sublime Text 3/Packages/User/Preferences.sublime-settings"
