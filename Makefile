@@ -41,4 +41,4 @@ casks:
 	@bash ./cask/cask.sh
 
 osx:
-	@bash ./scripts/osx.sh
+	@bash ./scripts/.osx
