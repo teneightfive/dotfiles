@@ -22,7 +22,6 @@ alias h="history"
 alias j="jobs"
 alias v="vim"
 alias sv="sudo v"
-alias st="subl"
 alias chr="open /Applications/Google\ Chrome.app"
 
 # git
