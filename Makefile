@@ -33,8 +33,5 @@ node:
 gems:
 	ruby $(DIR)/scripts/gems.rb
 
-casks:
-	@bash ./cask/cask.sh
-
 osx:
-	@bash ./scripts/.osx
+	./scripts/.osx
