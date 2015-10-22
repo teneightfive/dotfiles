@@ -1,4 +1,6 @@
 DIR=~/dotfiles
+LATEST_RUBY="2.2.3"
+SUBLIME_DIR=~/Library/Application\ Support/Sublime\ Text\ 3/Packages/User
 
 all: symlinks brew node ruby 
 
@@ -17,10 +19,10 @@ symlinks:
 	@ln -sf $(DIR)/gem/gemrc ~/.gemrc
 	@ln -nsf $(DIR)/bundle ~/.bundle
 	@ln -sf $(DIR)/rbenv ~/.rbenv
-	@ln -sf $(DIR)/app_config/sublime/"Default (OSX).sublime-keymap" ~/"Library/Application Support/Sublime Text 3/Packages/User/Default (OSX).sublime-keymap"
-	@ln -sf $(DIR)/app_config/sublime/"Package Control.sublime-settings" ~/"Library/Application Support/Sublime Text 3/Packages/User/Package Control.sublime-settings"
-	@ln -sf $(DIR)/app_config/sublime/Preferences.sublime-settings ~/"Library/Application Support/Sublime Text 3/Packages/User/Preferences.sublime-settings"
-	@ln -nsf $(DIR)/app_config/sublime/snippets ~/"Library/Application Support/Sublime Text 3/Packages/User/snippets"
+	@ln -sf $(DIR)/sublime/"Default (OSX).sublime-keymap" $(SUBLIME_DIR)/"Default (OSX).sublime-keymap"
+	@ln -sf $(DIR)/sublime/Package\ Control.sublime-settings $(SUBLIME_DIR)/Package\ Control.sublime-settings
+	@ln -sf $(DIR)/sublime/Preferences.sublime-settings $(SUBLIME_DIR)/Preferences.sublime-settings
+	@ln -nsf $(DIR)/sublime/snippets $(SUBLIME_DIR)/snippets
 
 ensure_brew:
 	ruby $(DIR)/scripts/ensure_homebrew.rb
@@ -37,7 +39,6 @@ nvm: brew
 node: nvm
 	ruby $(DIR)/scripts/npm_bundles.rb
 
-LATEST_RUBY="2.2.3"
 ruby:
 	[ -d ~/.rbenv/versions/$(LATEST_RUBY) ] || rbenv install $(LATEST_RUBY)
 	rbenv global $(LATEST_RUBY)
