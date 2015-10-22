@@ -31,10 +31,11 @@ brew: ensure_brew
 	brew tap Homebrew/bundle
 	brew bundle
 
-nvm: brew
-	source ~/.nvm/nvm.sh && nvm install 0.12
-	source ~/.nvm/nvm.sh && nvm install 4
-	source ~/.nvm/nvm.sh && nvm alias default 4
+nvm: 
+	curl https://raw.githubusercontent.com/creationix/nvm/v0.29.0/install.sh | PROFILE=~/.path | sh
+	source /usr/local/opt/nvm/nvm.sh && nvm install 0.12
+	source /usr/local/opt/nvm/nvm.sh && nvm install 4
+	source /usr/local/opt/nvm/nvm.sh && nvm alias default 4
 
 node: nvm
 	ruby $(DIR)/scripts/npm_bundles.rb

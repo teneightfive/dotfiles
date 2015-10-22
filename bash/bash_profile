@@ -34,3 +34,6 @@ fi
 
 # load rbenv
 if which rbenv > /dev/null; then eval "$(rbenv init -)"; fi
+
+# load nvm
+# source /usr/local/opt/nvm/nvm.sh
