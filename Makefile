@@ -1,6 +1,6 @@
 DIR=~/dotfiles
 
-all: symlinks brew node gems 
+all: symlinks brew node ruby 
 
 symlinks:
 	@ln -sf $(DIR)/bash/aliases ~/.aliases
@@ -15,6 +15,8 @@ symlinks:
 	@ln -sf $(DIR)/git/gitconfig ~/.gitconfig
 	@ln -sf $(DIR)/git/gitignore_global ~/.gitignore_global
 	@ln -sf $(DIR)/gem/gemrc ~/.gemrc
+	@ln -nsf $(DIR)/bundle ~/.bundle
+	@ln -sf $(DIR)/rbenv ~/.rbenv
 	@ln -sf $(DIR)/app_config/sublime/"Default (OSX).sublime-keymap" ~/"Library/Application Support/Sublime Text 3/Packages/User/Default (OSX).sublime-keymap"
 	@ln -sf $(DIR)/app_config/sublime/"Package Control.sublime-settings" ~/"Library/Application Support/Sublime Text 3/Packages/User/Package Control.sublime-settings"
 	@ln -sf $(DIR)/app_config/sublime/Preferences.sublime-settings ~/"Library/Application Support/Sublime Text 3/Packages/User/Preferences.sublime-settings"
@@ -27,8 +29,7 @@ brew: ensure_brew
 	brew tap Homebrew/bundle
 	brew bundle
 
-nvm:
-	curl https://raw.githubusercontent.com/creationix/nvm/v0.29.0/install.sh | sh
+nvm: brew
 	source ~/.nvm/nvm.sh && nvm install 0.12
 	source ~/.nvm/nvm.sh && nvm install 4
 	source ~/.nvm/nvm.sh && nvm alias default 4
@@ -36,8 +37,10 @@ nvm:
 node: nvm
 	ruby $(DIR)/scripts/npm_bundles.rb
 
-gems:
-	ruby $(DIR)/scripts/gems.rb
+LATEST_RUBY="2.2.3"
+ruby:
+	[ -d ~/.rbenv/versions/$(LATEST_RUBY) ] || rbenv install $(LATEST_RUBY)
+	rbenv global $(LATEST_RUBY)
 
 osx:
-	$(DIR)/scripts/.osx
+	sh $(DIR)/scripts/.osx
