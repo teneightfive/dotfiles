@@ -1,5 +1,5 @@
-brew tap 'homebrew/versions'
-brew tap 'Caskroom/homebrew-versions'
+tap 'homebrew/versions'
+tap 'Caskroom/homebrew-versions'
 brew 'ack'
 brew 'autoenv'
 brew 'bash'
