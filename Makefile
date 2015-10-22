@@ -27,11 +27,17 @@ brew: ensure_brew
 	brew tap Homebrew/bundle
 	brew bundle
 
-node:
+nvm:
+	curl https://raw.githubusercontent.com/creationix/nvm/v0.29.0/install.sh | sh
+	source ~/.nvm/nvm.sh && nvm install 0.12
+	source ~/.nvm/nvm.sh && nvm install 4
+	source ~/.nvm/nvm.sh && nvm alias default 4
+
+node: nvm
 	ruby $(DIR)/scripts/npm_bundles.rb
 
 gems:
 	ruby $(DIR)/scripts/gems.rb
 
 osx:
-	./scripts/.osx
+	$(DIR)/scripts/.osx
