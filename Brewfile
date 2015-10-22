@@ -27,7 +27,6 @@ brew 'wget'
 brew 'youtube-dl'
 
 brew 'caskroom/cask/brew-cask'
-cask '1password'
 cask 'alfred'
 cask 'atom'
 cask 'caffeine'
