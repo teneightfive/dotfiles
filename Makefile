@@ -25,7 +25,7 @@ symlinks:
 	@ln -nsf $(DIR)/sublime/snippets $(SUBLIME_DIR)/snippets
 
 ensure_brew:
-	ruby $(DIR)/scripts/ensure_homebrew.rb
+	sh $(DIR)/scripts/ensure_homebrew.sh
 
 brew: ensure_brew
 	brew tap Homebrew/bundle
