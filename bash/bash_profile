@@ -32,5 +32,5 @@ if [ -f ~/.git-completion.bash ]; then
   source ~/.git-completion.bash
 fi
 
-# load RVM
-# [[ -s "$HOME/.rvm/scripts/rvm" ]] && . "$HOME/.rvm/scripts/rvm" # Load RVM function
+# load rbenv
+if which rbenv > /dev/null; then eval "$(rbenv init -)"; fi
