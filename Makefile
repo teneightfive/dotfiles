@@ -1,14 +1,14 @@
 DIR=~/dotfiles
 LATEST_RUBY="2.2.3"
 SUBLIME_DIR=~/Library/Application\ Support/Sublime\ Text\ 3/Packages/User
+NVM_DIR=~/.nvm
 
-all: symlinks brew node ruby 
+all: brew node ruby symlinks
 
 symlinks:
 	@ln -sf $(DIR)/bash/aliases ~/.aliases
 	@ln -sf $(DIR)/bash/bash_profile ~/.bash_profile
 	@ln -sf $(DIR)/bash/bash_prompt ~/.bash_prompt
-	@ln -sf $(DIR)/bash/bashrc ~/.bashrc
 	@ln -sf $(DIR)/bash/exports ~/.exports
 	@ln -sf $(DIR)/bash/functions ~/.functions
 	@ln -sf $(DIR)/bash/path ~/.path
@@ -32,10 +32,10 @@ brew: ensure_brew
 	brew bundle
 
 nvm: 
-	curl https://raw.githubusercontent.com/creationix/nvm/v0.29.0/install.sh | PROFILE=~/.path | sh
-	source /usr/local/opt/nvm/nvm.sh && nvm install 0.12
-	source /usr/local/opt/nvm/nvm.sh && nvm install 4
-	source /usr/local/opt/nvm/nvm.sh && nvm alias default 4
+	curl https://raw.githubusercontent.com/creationix/nvm/v0.29.0/install.sh | NVM_DIR=$(NVM_DIR) PROFILE=~/.bash_profile sh
+	source $(NVM_DIR)/nvm.sh && nvm install 0.12
+	source $(NVM_DIR)/nvm.sh && nvm install 4
+	source $(NVM_DIR)/nvm.sh && nvm alias default 4
 
 node: nvm
 	ruby $(DIR)/scripts/npm_bundles.rb
