@@ -18,7 +18,7 @@ symlinks:
 	@ln -sf $(DIR)/git/gitignore_global ~/.gitignore_global
 	@ln -sf $(DIR)/gem/gemrc ~/.gemrc
 	@ln -nsf $(DIR)/bundle ~/.bundle
-	@ln -sf $(DIR)/rbenv ~/.rbenv
+	@ln -sf $(DIR)/rbenv/default-gems ~/.rbenv/default-gems
 	@ln -sf $(DIR)/sublime/"Default (OSX).sublime-keymap" $(SUBLIME_DIR)/"Default (OSX).sublime-keymap"
 	@ln -sf $(DIR)/sublime/Package\ Control.sublime-settings $(SUBLIME_DIR)/Package\ Control.sublime-settings
 	@ln -sf $(DIR)/sublime/Preferences.sublime-settings $(SUBLIME_DIR)/Preferences.sublime-settings
