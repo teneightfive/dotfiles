@@ -6,4 +6,5 @@ middleman
 pry
 rails
 sass
+scss_lint
 shotgun
