@@ -14,6 +14,7 @@ symlinks:
 	@ln -sf $(DIR)/bash/path ~/.path
 	@ln -sf $(DIR)/bash/git-completion.bash ~/.git-completion.bash
 	@ln -nsf $(DIR)/bin ~/bin
+	@ln -sf $(DIR)/linter/scss-lint.yml ~/.scss-lint.yml
 	@ln -sf $(DIR)/git/gitconfig ~/.gitconfig
 	@ln -sf $(DIR)/git/gitignore_global ~/.gitignore_global
 	@ln -sf $(DIR)/gem/gemrc ~/.gemrc
@@ -31,7 +32,7 @@ brew: ensure_brew
 	brew tap Homebrew/bundle
 	brew bundle
 
-nvm: 
+nvm:
 	curl https://raw.githubusercontent.com/creationix/nvm/v0.29.0/install.sh | NVM_DIR=$(NVM_DIR) PROFILE=~/.bash_profile sh
 	source $(NVM_DIR)/nvm.sh && nvm install 0.12
 	source $(NVM_DIR)/nvm.sh && nvm install 4
