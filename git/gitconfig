@@ -86,7 +86,7 @@
   ############ MISC ############
   undo = reset --soft HEAD@{1}
   ignored = !git ls-files -v | grep "^[[:lower:]]"
-  
+
 [push]
   default = upstream
 
@@ -122,10 +122,10 @@
 
 [difftool "sourcetree"]
   cmd = opendiff \"$LOCAL\" \"$REMOTE\"
-  path = 
+  path =
 
 [mergetool "sourcetree"]
-  cmd = /Applications/SourceTree.app/Contents/Resources/opendiff-w.sh \"$LOCAL\" \"$REMOTE\" -ancestor \"$BASE\" -merge \"$MERGED\"
+  cmd = /opt/homebrew-cask/Caskroom/sourcetree/2.0.5.7/SourceTree.app/Contents/Resources/opendiff-w.sh \"$LOCAL\" \"$REMOTE\" -ancestor \"$BASE\" -merge \"$MERGED\"
   trustExitCode = true
 [filter "media"]
   clean = git media clean %f
