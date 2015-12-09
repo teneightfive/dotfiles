@@ -58,3 +58,7 @@ npm-debug.log
 # Local Procile #
 ######################
 local.Procfile
+
+# Atom TODO #
+######################
+.imdone/
