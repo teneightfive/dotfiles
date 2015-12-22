@@ -3,3 +3,6 @@ export PATH="/usr/local/heroku/bin:$PATH"
 
 # add local bin folder
 export PATH="$HOME/bin:$PATH"
+
+# add rbenv to path
+export PATH="$HOME/.rbenv/bin:$PATH"
