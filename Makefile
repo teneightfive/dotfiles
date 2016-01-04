@@ -14,6 +14,7 @@ symlinks:
 	@ln -sf $(DIR)/bash/path ~/.path
 	@ln -sf $(DIR)/bash/git-completion.bash ~/.git-completion.bash
 	@ln -nsf $(DIR)/bin ~/bin
+	@ln -sf $(DIR)/linter/jshintrc ~/.jshintrc
 	@ln -sf $(DIR)/linter/scss-lint.yml ~/.scss-lint.yml
 	@ln -sf $(DIR)/git/gitconfig ~/.gitconfig
 	@ln -sf $(DIR)/git/gitignore_global ~/.gitignore_global
