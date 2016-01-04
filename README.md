@@ -15,29 +15,31 @@ Files are symlinked into the proper location, and have the `.` added. For exampl
 - `make`
 
 ### homebrew
-- Add line to `Brewfile`.
+- Add line to `Brewfile`
 - Run `make brew`
 
+### applications
+- Apps are installed using [brew cask](https://github.com/caskroom/homebrew-cask)
+- To add an application add it to the `Brewfile`
+
+Applications installed via App Store:
+- 1Password
+- Transmit
+- TweetDeck
+
 ### node & npm
-- The latest Node is installed via homebrew.
+- Node is installed and managed using [nvm](https://github.com/creationix/nvm)
 - Packages are managed in `scripts/npm_bundles.rb`.
 - Add a new package, and run `make node`.
 
-### gems
-- Add gem to `scripts/gems.rb`
-- Run `make gems`
-
-### cask
-- Add applications to `cask/.cask`
-- Run `make cask`
+### ruby & gems
+- Ruby is installed and versions are managed using [rbenv](https://github.com/rbenv/rbenv)
+- To have gems installed with each version of ruby add each to `rbenv/default-gems`
+- Run `make ruby`
 
 ### osx defaults
 - Amend defaults as required in `scipts/.osx`
 - Run `make osx`
-
-### app config files
-- ST
-- iTerm
 
 ## Updating
 You can run `make` at any time to keep things nice and tidy.
