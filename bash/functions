@@ -10,6 +10,9 @@ function gcob() {
 function gcp() {
   git commit -am "$1" && git push
 }
+function gcl() {
+  git clone "$@" && cd `echo $_ | sed -n -e 's/^.*\/\([^.]*\)\(.git\)*/\1/p'`
+}
 
 # Simple calculator
 function calc() {
@@ -282,6 +285,16 @@ function st() {
     subl .
   else
     subl "$@"
+  fi
+}
+
+# `s` with no arguments opens the current directory in Sublime Text, otherwise
+# opens the given location
+function a() {
+  if [ $# -eq 0 ]; then
+    atom .
+  else
+    atom "$@"
   fi
 }
 
