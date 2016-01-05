@@ -10,7 +10,6 @@ alias -- -="cd -"
 alias dl="cd ~/Downloads"
 alias dt="cd ~/Desktop"
 alias p="cd ~/Projects"
-alias s="cd ~/Sites"
 
 # dotfiles
 alias df="cd ~/dotfiles"
@@ -35,7 +34,7 @@ alias gs="git s" # status
 alias gpu="git push"
 alias gpl="git pull"
 alias gpo="git pull origin"
-alias gum="gco master && gpo"
+alias gum="git checkout master && git pull origin master"
 alias gt="git tag"
 
 # ruby
