@@ -62,3 +62,7 @@ local.Procfile
 # Atom TODO #
 ######################
 .imdone/
+
+# NVM Config #
+######################
+.nvmrc
