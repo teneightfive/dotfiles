@@ -18,7 +18,6 @@ npms = {
   "hubot" => "",
   "jscs" => "",
   "jshint" => "",
-  "keybase" => "",
   "mocha" => "",
   "nodemon" => "",
   "phantomjs" => "",
