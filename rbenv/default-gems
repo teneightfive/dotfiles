@@ -8,3 +8,4 @@ rails
 sass
 scss_lint
 shotgun
+travis
