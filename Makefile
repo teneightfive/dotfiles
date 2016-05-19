@@ -37,7 +37,8 @@ nvm:
 	curl https://raw.githubusercontent.com/creationix/nvm/v0.29.0/install.sh | NVM_DIR=$(NVM_DIR) PROFILE=$(HOME)/.bash_profile sh
 	source $(NVM_DIR)/nvm.sh && nvm install 0.12
 	source $(NVM_DIR)/nvm.sh && nvm install 4
-	source $(NVM_DIR)/nvm.sh && nvm alias default 4
+	source $(NVM_DIR)/nvm.sh && nvm install 6
+	source $(NVM_DIR)/nvm.sh && nvm alias default 6
 
 node: nvm
 	ruby $(DIR)/scripts/npm_bundles.rb
