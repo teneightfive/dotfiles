@@ -26,6 +26,7 @@ brew 'selenium-server-standalone'
 brew 'sqlite'
 brew 'vim'
 brew 'wget'
+brew 'yarn'
 brew 'youtube-dl'
 
 brew 'caskroom/cask/brew-cask'
