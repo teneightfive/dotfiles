@@ -4,6 +4,7 @@ puts "Running Node version: #{`node --version`}"
 npms = {
   # module name => module command
   # leave command blank if they are the same
+  "apiconnect" => "apic",
   "azure-cli" => "azure",
   "bower" => "",
   "browser-sync" => "",
