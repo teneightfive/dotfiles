@@ -25,7 +25,6 @@ npms = {
   "phantomjs" => "",
   "protractor" => "",
   "sails" => "",
-  "strongloop" => "slc",
   "yo" => "",
 }
 

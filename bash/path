@@ -9,3 +9,6 @@ export PATH="$HOME/.rbenv/bin:$PATH"
 
 # add deliver to path
 export PATH="$HOME/.deliver/bin:$PATH"
+
+# Export yarn globally
+export PATH="$PATH:`yarn global bin`"

@@ -32,9 +32,3 @@ fi
 
 # load rbenv
 if which rbenv > /dev/null; then eval "$(rbenv init -)"; fi
-
-export NVM_DIR="/Users/dom/.nvm"
-[ -s "$NVM_DIR/nvm.sh" ] && . "$NVM_DIR/nvm.sh"  # This loads nvm
-[[ -r $NVM_DIR/bash_completion ]] && . $NVM_DIR/bash_completion
-
-test -e "${HOME}/.iterm2_shell_integration.bash" && source "${HOME}/.iterm2_shell_integration.bash"

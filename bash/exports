@@ -24,5 +24,8 @@ export GREP_OPTIONS="--color=auto"
 # Link Homebrew casks in `/Applications` rather than `~/Applications`
 export HOMEBREW_CASK_OPTS="--appdir=/Applications"
 
-# Export yarn globally
-export PATH="$PATH:`yarn global bin`"
+export NVM_DIR="/Users/dom/.nvm"
+[ -s "$NVM_DIR/nvm.sh" ] && . "$NVM_DIR/nvm.sh"  # This loads nvm
+[[ -r $NVM_DIR/bash_completion ]] && . $NVM_DIR/bash_completion
+
+test -e "${HOME}/.iterm2_shell_integration.bash" && source "${HOME}/.iterm2_shell_integration.bash"

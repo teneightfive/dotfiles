@@ -9,12 +9,10 @@
   amend = commit --amend -C HEAD
   authors = "!git log --pretty=format:%aN | sort | uniq -c | sort -rn"
   ############ BRANCH ############
-  b = branch
-  ba = branch --all
-  bav = branch --all -vv
+  b = branch -vv
+  ba = branch --all -vv
   bd = branch -D
   bm = branch --move
-  br = branch -vv
   ############ COMMIT ############
   c = commit
   ca = commit --amend
@@ -25,33 +23,17 @@
   cob = checkout -b
   ############ CHERRY PICK ############
   pick = cherry-pick
-  ############ CLONE ############
-  cl = clone
   ############ DIFF ############
   d = diff
-  dc = diff --cached
   ds = diff --staged
-  dt = difftool
   ############ FETCH ############
-  f = fetch
-  fa = fetch --all
-  prune = fetch --prune
+  f = fetch --all
   ############ LOGGING ############
   la = "!git config -l | grep alias | cut -c 7-"
-  lb = log --oneline --decorate --color=always
   lg = log --graph --pretty=format:'%C(blue)%h%Creset %C(red)%cr%Creset %C(auto)%d%Creset %s %C(cyan)[%an]%Creset' --abbrev-commit --date=relative
-  lgs = log --graph --pretty=format:'%C(blue)%h%Creset %C(red)%ad%Creset %C(auto)%d%Creset %s %C(cyan)[%an]%Creset' --abbrev-commit --date=short
-  lgl = log --graph --pretty=format:'%C(blue)%h%Creset %C(red)%ad%Creset %C(auto)%d%Creset %s %C(cyan)[%an]%Creset' --abbrev-commit --date=local
-  ls = log --pretty=format:"%C(blue)%h%C(auto)%d\\ %Creset%s%C(cyan)\\ [%cn]" --decorate
   ll = log --pretty=format:"%C(blue)%h\\ %C(red)%ad%C(auto)%d\\ %Creset%s%C(cyan)\\ [%cn]" --decorate --numstat --date=relative
-  lls = log --pretty=format:"%C(blue)%h\\ %C(red)%ad%C(auto)%d\\ %Creset%s%C(cyan)\\ [%cn]" --decorate --numstat --date=short
-  lll = log --pretty=format:"%C(blue)%h\\ %C(red)%ad%C(auto)%d\\ %Creset%s%C(cyan)\\ [%cn]" --decorate --numstat --date=local
   ld = log --pretty=format:"%C(blue)%h\\ %C(red)%ad%C(auto)%d\\ %Creset%s%C(cyan)\\ [%cn]" --decorate --date=relative
-  lds = log --pretty=format:"%C(blue)%h\\ %C(red)%ad%C(auto)%d\\ %Creset%s%C(cyan)\\ [%cn]" --decorate --date=short
-  ldl = log --pretty=format:"%C(blue)%h\\ %C(red)%ad%C(auto)%d\\ %Creset%s%C(cyan)\\ [%cn]" --decorate --date=local
-  ra = !git log --graph --abbrev-commit --date=relative -20 --all --pretty='format:%C(yellow)%h%Creset -%C(red)%d%Creset %s %Cgreen(%ar) %C(bold blue)<%an>%Creset'
   ls-ignored = ls-files --exclude-standard --ignored --others
-  lf = diff-tree --no-commit-id --name-only -r
   ############ MERGE ############
   m = merge -s recursive -X patience
   mm = merge --no-ff
@@ -62,10 +44,8 @@
   pf = push --force
   ############ PULL ############
   pl = pull
-  plr = pull --rebase
   ############ REMOTES ############
   prune-remotes = "!for remote in `git remote`; do git remote prune $remote; done"
-  prune-tags = fetch origin --prune --tags
   r = remote
   ############ REBASE ############
   rb = rebase
@@ -85,7 +65,6 @@
   stp = stash pop
   ############ MISC ############
   undo = reset --soft HEAD@{1}
-  ignored = !git ls-files -v | grep "^[[:lower:]]"
 
 [push]
   default = upstream
@@ -124,12 +103,13 @@
   editor = atom -n -w
 
 [difftool "sourcetree"]
-	cmd = opendiff \"$LOCAL\" \"$REMOTE\"
-	path =
+  cmd = opendiff \"$LOCAL\" \"$REMOTE\"
+  path =
 
 [mergetool "sourcetree"]
-	cmd = /Applications/SourceTree.app/Contents/Resources/opendiff-w.sh \"$LOCAL\" \"$REMOTE\" -ancestor \"$BASE\" -merge \"$MERGED\"
-	trustExitCode = true
+  cmd = /Applications/SourceTree.app/Contents/Resources/opendiff-w.sh \"$LOCAL\" \"$REMOTE\" -ancestor \"$BASE\" -merge \"$MERGED\"
+  trustExitCode = true
+
 [filter "media"]
   clean = git media clean %f
   smudge = git media smudge %f
