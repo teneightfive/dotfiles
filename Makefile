@@ -21,10 +21,6 @@ symlinks:
 	@ln -sf $(DIR)/gem/gemrc ~/.gemrc
 	@ln -nsf $(DIR)/bundle ~/.bundle
 	@ln -sf $(DIR)/rbenv/default-gems ~/.rbenv/default-gems
-	@ln -sf $(DIR)/sublime/"Default (OSX).sublime-keymap" $(SUBLIME_DIR)/"Default (OSX).sublime-keymap"
-	@ln -sf $(DIR)/sublime/Package\ Control.sublime-settings $(SUBLIME_DIR)/Package\ Control.sublime-settings
-	@ln -sf $(DIR)/sublime/Preferences.sublime-settings $(SUBLIME_DIR)/Preferences.sublime-settings
-	@ln -nsf $(DIR)/sublime/snippets $(SUBLIME_DIR)/snippets
 
 ensure_brew:
 	sh $(DIR)/scripts/ensure_homebrew.sh
