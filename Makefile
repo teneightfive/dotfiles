@@ -3,7 +3,7 @@ LATEST_RUBY="2.4.0"
 SUBLIME_DIR=$(HOME)/Library/Application\ Support/Sublime\ Text\ 3/Packages/User
 NVM_DIR=$(HOME)/.nvm
 
-all: symlinks brew node ruby
+all: brew ruby node symlinks
 
 symlinks:
 	@ln -sf $(DIR)/bash/aliases ~/.aliases
