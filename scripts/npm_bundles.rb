@@ -6,10 +6,7 @@ npms = {
   # leave command blank if they are the same
   "apiconnect" => "apic",
   "azure-cli" => "azure",
-  "bower" => "",
-  "browser-sync" => "",
   "casperjs" => "",
-  "coffee-script" => "coffee",
   "dalek-cli" => "dalek",
   "express" => "",
   "gh" => "",
@@ -23,7 +20,6 @@ npms = {
   "mocha" => "",
   "nodemon" => "",
   "phantomjs" => "",
-  "protractor" => "",
   "sails" => "",
   "yo" => "",
 }

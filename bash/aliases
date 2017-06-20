@@ -44,6 +44,7 @@ alias nisd="npm install --save-dev"
 alias nui="npm uninstall"
 alias nr="npm run"
 alias ns="npm start"
+alias ng="npm list -g --depth=0 2>/dev/null"
 
 # karma
 alias ks="karma start --no-auto-watch --no-single-run"

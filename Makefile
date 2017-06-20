@@ -35,7 +35,8 @@ nvm:
 	source $(NVM_DIR)/nvm.sh && nvm install 4
 	source $(NVM_DIR)/nvm.sh && nvm install 6
 	source $(NVM_DIR)/nvm.sh && nvm install 7
-	source $(NVM_DIR)/nvm.sh && nvm alias default 6
+	source $(NVM_DIR)/nvm.sh && nvm install 8
+	source $(NVM_DIR)/nvm.sh && nvm alias default 8
 
 node: nvm
 	ruby $(DIR)/scripts/npm_bundles.rb
