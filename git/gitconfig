@@ -58,7 +58,7 @@
   ############ STATUS ############
   s = status --short --branch
   ############ STASH ############
-  st = stash
+  st = stash -u
   sta = stash apply
   sts = stash save
   stl = stash list
@@ -104,7 +104,7 @@
 
 [difftool "sourcetree"]
 	cmd = opendiff \"$LOCAL\" \"$REMOTE\"
-	path = 
+	path =
 
 [mergetool "sourcetree"]
 	cmd = /Applications/SourceTree.app/Contents/Resources/opendiff-w.sh \"$LOCAL\" \"$REMOTE\" -ancestor \"$BASE\" -merge \"$MERGED\"
