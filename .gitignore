@@ -1,3 +1,4 @@
 rbenv/shims
 rbenv/version
 rbenv/versions
+bundle/cache
