@@ -100,7 +100,7 @@
 
 [core]
   excludesfile = ~/.gitignore_global
-  editor = atom -n -w
+  editor = code -n -w
 
 [difftool "sourcetree"]
 	cmd = opendiff \"$LOCAL\" \"$REMOTE\"
