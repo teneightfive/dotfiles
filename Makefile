@@ -1,5 +1,5 @@
 DIR=$(HOME)/dotfiles
-LATEST_RUBY="2.4.0"
+LATEST_RUBY="2.5.1"
 SUBLIME_DIR=$(HOME)/Library/Application\ Support/Sublime\ Text\ 3/Packages/User
 NVM_DIR=$(HOME)/.nvm
 
@@ -36,7 +36,9 @@ nvm:
 	source $(NVM_DIR)/nvm.sh && nvm install 6
 	source $(NVM_DIR)/nvm.sh && nvm install 7
 	source $(NVM_DIR)/nvm.sh && nvm install 8
-	source $(NVM_DIR)/nvm.sh && nvm alias default 8
+	source $(NVM_DIR)/nvm.sh && nvm install 9
+	source $(NVM_DIR)/nvm.sh && nvm install 10
+	source $(NVM_DIR)/nvm.sh && nvm alias default 10
 
 node: nvm
 	ruby $(DIR)/scripts/npm_bundles.rb
