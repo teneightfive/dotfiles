@@ -6,6 +6,7 @@ export PATH="$HOME/bin:$PATH"
 
 # add rbenv to path
 export PATH="$HOME/.rbenv/bin:$PATH"
+eval "$(rbenv init -)"
 
 # add deliver to path
 export PATH="$HOME/.deliver/bin:$PATH"
