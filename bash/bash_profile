@@ -30,5 +30,8 @@ if [ -f ~/.git-completion.bash ]; then
   source ~/.git-completion.bash
 fi
 
+# Add kubernetes completion
+source <(kubectl completion bash)
+
 # load rbenv
 if which rbenv > /dev/null; then eval "$(rbenv init -)"; fi
