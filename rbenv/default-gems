@@ -1,11 +1,5 @@
 bundler
 foreman
-haml2slim
-jekyll
 middleman
 pry
 rails
-sass
-scss_lint
-shotgun
-travis
