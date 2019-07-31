@@ -25,7 +25,6 @@ ensure_brew:
 	sh $(DIR)/scripts/ensure_homebrew.sh
 
 brew: ensure_brew
-	brew tap Homebrew/bundle
 	brew bundle
 
 nvm:
