@@ -65,6 +65,7 @@
   stp = stash pop
   ############ MISC ############
   undo = reset --soft HEAD@{1}
+  wip = commit -n -m "wip"
 
 [push]
   default = upstream
