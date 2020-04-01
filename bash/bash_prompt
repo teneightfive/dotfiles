@@ -41,14 +41,14 @@ function git_br() {
     git branch 2> /dev/null | sed -e '/^[^*]/d' -e 's/* \(.*\)/(\1)/'
 }
 function parse_git_dirty() {
-  [[ $(git status 2> /dev/null | tail -n1) != *"working directory clean"* ]] && echo "*"
+  [[ $(git status 2> /dev/null | tail -n1) != *"working tree clean"* ]] && echo "*"
 }
 
 function parse_git_branch() {
-  git branch --no-color 2> /dev/null | sed -e '/^[^*]/d' -e "s/* \(.*\)/\1$(parse_git_dirty)/"
+  git branch --no-color 2> /dev/null | sed -e '/^[^*]/d' -e "s/* \(.*\)/(\1$(parse_git_dirty))/"
 }
 
-export PS1="${LBLUE}\u ${WHITE}in ${LBLUE}\w${WHITE}\$([[ -n \$(git branch 2> /dev/null) ]] && echo \" on \")${LBLUE}\$(parse_git_branch)${LWHITE} \$ ${RESET}"
+export PS1="${LBLUE}/\W${WHITE}\$([[ -n \$(git branch 2> /dev/null) ]] && echo \" \")${LWHITE}\$(parse_git_branch)${LWHITE} \n\$ ${RESET}"
 # export PS2="\[$ORANGE\]→ \[$RESET\]"
 
 #export PS1="$BLUE\W $CYAN\$(ruby_ver) $LCYAN\$(rails_ver) $GREEN\$(git_br)$WHITE\n\$ "
