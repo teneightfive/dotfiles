@@ -33,6 +33,7 @@ brew 'yarn'
 brew 'youtube-dl'
 
 cask 'alfred'
+cask 'authy'
 cask 'caffeine'
 cask 'dash'
 cask 'evernote'
