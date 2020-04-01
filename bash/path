@@ -13,3 +13,6 @@ export PATH="$HOME/.deliver/bin:$PATH"
 
 # Export yarn globally
 export PATH="$PATH:`yarn global bin`"
+
+# Export Homebrew's sbin
+export PATH="/usr/local/sbin:$PATH"
