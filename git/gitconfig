@@ -14,10 +14,11 @@
   bd = branch -D
   bm = branch --move
   ############ COMMIT ############
-  c = commit
-  ca = commit --amend
-  cm = commit --message
-  cf = commit --fixup
+  c = commit -S
+  ca = commit -S --amend
+  cm = commit -S --message
+  cf = commit -S --fixup
+  wip = commit -S -n -m "wip"
   ############ CHECKOUT ############
   co = checkout
   cob = checkout -b
@@ -65,7 +66,6 @@
   stp = stash pop
   ############ MISC ############
   undo = reset --soft HEAD@{1}
-  wip = commit -n -m "wip"
 
 [push]
   default = upstream
@@ -105,7 +105,7 @@
 
 [difftool "sourcetree"]
 	cmd = opendiff \"$LOCAL\" \"$REMOTE\"
-	path = 
+	path =
 
 [mergetool "sourcetree"]
 	cmd = /Applications/SourceTree.app/Contents/Resources/opendiff-w.sh \"$LOCAL\" \"$REMOTE\" -ancestor \"$BASE\" -merge \"$MERGED\"
@@ -115,3 +115,9 @@
   clean = git media clean %f
   smudge = git media smudge %f
   required = true
+
+[commit]
+  gpgsign = true
+
+[gpg]
+  program = gpg
