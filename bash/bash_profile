@@ -23,7 +23,7 @@ for option in autocd globstar; do
 done
 
 # If possible, add tab completion for many more commands
-[ -f /etc/bash_completion ] && source /etc/bash_completion
+[[ -r "/usr/local/etc/profile.d/bash_completion.sh" ]] && . "/usr/local/etc/profile.d/bash_completion.sh"
 
 # git auto completion
 if [ -f ~/.git-completion.bash ]; then
