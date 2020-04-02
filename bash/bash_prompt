@@ -37,20 +37,6 @@ function rails_ver() {
   fi
 }
 
-function git_br() {
-    git branch 2> /dev/null | sed -e '/^[^*]/d' -e 's/* \(.*\)/(\1)/'
-}
-function parse_git_dirty() {
-  [[ $(git status 2> /dev/null | tail -n1) != *"working tree clean"* ]] && echo "*"
-}
-
-function parse_git_branch() {
-  git branch --no-color 2> /dev/null | sed -e '/^[^*]/d' -e "s/* \(.*\)/(\1$(parse_git_dirty))/"
-}
-
-export PS1="${LBLUE}/\W${WHITE}\$([[ -n \$(git branch 2> /dev/null) ]] && echo \" \")${LWHITE}\$(parse_git_branch)${LWHITE} \n\$ ${RESET}"
+GIT_PS1_SHOWDIRTYSTATE=true
+export PS1="\n${WHITE}in ${LBLUE}\W${WHITE}\$([[ -n \$(git branch 2> /dev/null) ]] && echo \" on\")${LBLUE}\$(__git_ps1)${LBLUE} \n\$ ${RESET}"
 # export PS2="\[$ORANGE\]→ \[$RESET\]"
-
-#export PS1="$BLUE\W $CYAN\$(ruby_ver) $LCYAN\$(rails_ver) $GREEN\$(git_br)$WHITE\n\$ "
-#export PS2="\$ "
-# export PS1="$RED/\W$LRED\$(git_br)$RED\$ $WHITE"
