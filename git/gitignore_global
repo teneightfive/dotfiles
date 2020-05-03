@@ -43,6 +43,7 @@ Thumbs.db
 .sublime-*
 .idea/
 .vscode/
+.tmuxinator.yml
 
 # NPM #
 ######################

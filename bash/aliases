@@ -17,6 +17,7 @@ alias reload="source ~/.bash_profile"
 
 # general / apps
 alias h="history"
+alias hs="history | grep"
 alias j="jobs"
 alias v="vim"
 alias sv="sudo v"
