@@ -14,6 +14,7 @@ symlinks:
 	@ln -sf $(DIR)/bash/git-completion.bash ~/.git-completion.bash
 	@ln -sf $(DIR)/zsh/zshrc ~/.zshrc
 	@ln -sf $(DIR)/zsh/tmux ~/.tmux.conf
+	@ln -sf $(DIR)/zsh/aliases.zsh ~/.oh-my-zsh/custom/aliases.zsh
 	@ln -nsf $(DIR)/bin ~/bin
 	@ln -sf $(DIR)/linter/jshintrc ~/.jshintrc
 	@ln -sf $(DIR)/linter/scss-lint.yml ~/.scss-lint.yml
