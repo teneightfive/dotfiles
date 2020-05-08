@@ -155,3 +155,6 @@ SPACESHIP_PROMPT_ORDER=(
   exit_code     # Exit code section
   char          # Prompt character
 )
+
+## Add brew to PATH
+export PATH="/usr/local/sbin:$PATH"
