@@ -71,8 +71,8 @@ ZSH_DOTENV_PROMPT=false
 # Custom plugins may be added to ~/.oh-my-zsh/custom/plugins/
 # Example format: plugins=(rails git textmate ruby lighthouse)
 # Add wisely, as too many plugins slow down shell startup.
-# plugins=(git)
-plugins=(dotenv git heroku jira kubectl npm nvm osx sudo vscode z zsh-autosuggestions zsh_reload)
+# plugins=(git heroku nvm osx vscode)
+plugins=(dotenv git jira kubectl npm sudo z zsh-autosuggestions zsh_reload)
 
 ## Installed custom plugins
 # git clone https://github.com/zsh-users/zsh-autosuggestions ${ZSH_CUSTOM:-~/.oh-my-zsh/custom}/plugins/zsh-autosuggestions
@@ -128,8 +128,8 @@ SPACESHIP_PROMPT_ORDER=(
   git           # Git section (git_branch + git_status)
   # hg            # Mercurial section (hg_branch  + hg_status)
   # package       # Package version
-  node          # Node.js section
-  ruby          # Ruby section
+  # node          # Node.js section
+  # ruby          # Ruby section
   # elixir        # Elixir section
   # xcode         # Xcode section
   # swift         # Swift section
@@ -145,7 +145,7 @@ SPACESHIP_PROMPT_ORDER=(
   # pyenv         # Pyenv section
   # dotnet        # .NET section
   # ember         # Ember.js section
-  kubectl       # Kubectl context section
+  # kubectl       # Kubectl context section
   # terraform     # Terraform workspace section
   exec_time     # Execution time
   line_sep      # Line break
