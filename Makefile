@@ -13,7 +13,7 @@ symlinks:
 	@ln -sf $(DIR)/bash/path ~/.path
 	@ln -sf $(DIR)/bash/git-completion.bash ~/.git-completion.bash
 	@ln -sf $(DIR)/zsh/zshrc ~/.zshrc
-	@ln -sf $(DIR)/zsh/tmux ~/.tmux.conf
+	@ln -sf $(DIR)/zsh/tmux.conf ~/.tmux.conf
 	@ln -sf $(DIR)/zsh/aliases.zsh ~/.oh-my-zsh/custom/aliases.zsh
 	@ln -nsf $(DIR)/bin ~/bin
 	@ln -sf $(DIR)/linter/jshintrc ~/.jshintrc
