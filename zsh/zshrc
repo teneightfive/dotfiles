@@ -72,7 +72,7 @@ ZSH_DOTENV_PROMPT=false
 # Example format: plugins=(rails git textmate ruby lighthouse)
 # Add wisely, as too many plugins slow down shell startup.
 # plugins=(git heroku nvm osx vscode)
-plugins=(dotenv git jira kubectl npm sudo z zsh-autosuggestions zsh_reload)
+plugins=(dotenv git jira kubectl npm nvm sudo z zsh-autosuggestions zsh_reload)
 
 ## Installed custom plugins
 # git clone https://github.com/zsh-users/zsh-autosuggestions ${ZSH_CUSTOM:-~/.oh-my-zsh/custom}/plugins/zsh-autosuggestions
@@ -158,3 +158,6 @@ SPACESHIP_PROMPT_ORDER=(
 
 ## Add brew to PATH
 export PATH="/usr/local/sbin:$PATH"
+
+# load rbenv
+if which rbenv > /dev/null; then eval "$(rbenv init -)"; fi
