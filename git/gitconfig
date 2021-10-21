@@ -55,8 +55,8 @@
   rbs = rebase --skip
   rbi = rebase --interactive
   rbia = rebase --interactive --autosquash
-  rbm = rebase master
-  rbsm = rebase --autosquash master
+  rbm = rebase main
+  rbsm = rebase --autosquash main
   rbsq = rebase --autosquash
   rh = reset --hard
   ############ STATUS ############
