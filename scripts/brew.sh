@@ -74,6 +74,7 @@ brew install --cask homebrew/cask-versions/google-chrome-canary
 brew install --cask google-drive
 brew install --cask gpg-suite
 brew install --cask imageoptim
+brew install --cask iterm2
 brew install --cask keybase
 brew install --cask moom
 brew install --cask postman
