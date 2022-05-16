@@ -62,6 +62,7 @@ brew install zsh
 # Apps
 brew install --cask alfred
 brew install --cask authy
+brew install --cask brave-browser
 brew install --cask caffeine
 brew install --cask dash
 brew install --cask docker
