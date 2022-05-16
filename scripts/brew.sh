@@ -60,6 +60,7 @@ brew install zsh
 # brew install tmuxinator
 
 # Apps
+brew install --cask adobe-creative-cloud
 brew install --cask alfred
 brew install --cask authy
 brew install --cask brave-browser
