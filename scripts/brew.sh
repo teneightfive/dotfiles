@@ -80,6 +80,7 @@ brew install --cask keybase
 brew install --cask moom
 brew install --cask postman
 brew install --cask rescuetime
+brew install --cask shift
 brew install --cask slack
 brew install --cask spotify
 brew install --cask visual-studio-code
