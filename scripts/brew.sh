@@ -85,7 +85,7 @@ brew install --cask shift
 brew install --cask sketch
 brew install --cask slack
 brew install --cask spotify
-brew install --cask visual-studio-code
+# brew install --cask visual-studio-code # Install Apple Silicon version
 
 # Remove outdated versions from the cellar.
 brew cleanup
