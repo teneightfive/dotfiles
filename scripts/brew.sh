@@ -31,6 +31,7 @@ brew install grep
 brew install gnupg
 brew install heroku
 brew install node
+brew install pinentry-mac
 brew install curl
 brew install watch
 
