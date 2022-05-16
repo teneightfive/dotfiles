@@ -22,3 +22,12 @@ alias nui="npm uninstall"
 alias nr="npm run"
 alias ns="npm start"
 alias ng="npm list -g --depth=0 2>/dev/null"
+
+# dotfiles
+alias df="cd ~/dotfiles"
+alias reload="source ~/.zshrc"
+
+# Directory Shortcuts
+alias dl="cd ~/Downloads"
+alias dt="cd ~/Desktop"
+alias p="cd ~/Projects"

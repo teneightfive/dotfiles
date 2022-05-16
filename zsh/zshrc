@@ -72,7 +72,7 @@ ZSH_DOTENV_PROMPT=false
 # Example format: plugins=(rails git textmate ruby lighthouse)
 # Add wisely, as too many plugins slow down shell startup.
 # plugins=(git heroku nvm osx vscode)
-plugins=(dotenv git jira kubectl npm nvm sudo z zsh-autosuggestions)
+plugins=(dotenv git jira kubectl npm nvm sudo z zsh-autosuggestions vscode)
 
 ## Installed custom plugins
 # git clone https://github.com/zsh-users/zsh-autosuggestions ${ZSH_CUSTOM:-~/.oh-my-zsh/custom}/plugins/zsh-autosuggestions
@@ -187,4 +187,4 @@ load-nvmrc
 # heroku autocomplete setup
 HEROKU_AC_ZSH_SETUP_PATH=/Users/dom/Library/Caches/heroku/autocomplete/zsh_setup && test -f $HEROKU_AC_ZSH_SETUP_PATH && source $HEROKU_AC_ZSH_SETUP_PATH;
 
-eval "$(direnv hook zsh)"
+# eval "$(direnv hook zsh)"
