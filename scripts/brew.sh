@@ -34,6 +34,9 @@ brew install node
 brew install pinentry-mac
 brew install curl
 brew install watch
+# cf manually updated tap for M1 cf-cli
+brew install wanddynosios/tap/cf-cli
+# brew install cloudfoundry/tap/cf-cli@8
 
 brew install git
 brew install git-lfs
