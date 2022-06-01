@@ -56,9 +56,8 @@
   rbi = rebase --interactive
   rbia = rebase --interactive --autosquash
   rbm = rebase main
-  rbsm = rebase --autosquash main
-  rbsq = rebase --autosquash
   rh = reset --hard
+  fixup = "!GIT_SEQUENCE_EDITOR=true git rebase -i --autosquash"
   ############ STATUS ############
   s = status --short --branch
   ############ STASH ############
