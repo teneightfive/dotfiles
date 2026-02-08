@@ -14,13 +14,23 @@ cask 'iterm2'
 
 # Development
 cask 'docker-desktop'
+cask 'ngrok'
+
+# Design
+cask 'sketch'
 
 # Personal productivity
 cask 'authy'
+cask 'caffeine'
 cask 'flux-app'
 cask 'google-drive'
 cask 'keybase'
 cask 'shift'
+cask 'evernote'
+cask 'imageoptim'
+cask 'notion'
+cask 'notion-calendar'
+cask 'notion-mail'
 
 # Security
 cask 'gpg-suite'

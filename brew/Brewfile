@@ -49,15 +49,9 @@ brew 'wget'
 
 # Productivity
 cask 'alfred'
-cask 'caffeine'
 cask 'dash'
-cask 'evernote'
-cask 'imageoptim'
 cask '1password'
 cask '1password-cli'
-cask 'notion'
-cask 'notion-calendar'
-cask 'notion-mail'
 cask 'moom'
 
 # Development
@@ -67,10 +61,8 @@ cask 'visual-studio-code'
 cask 'medis'
 cask 'postman'
 brew 'direnv'
-cask 'ngrok'
 
 # Design
-cask 'sketch'
 cask 'figma'
 
 # Browsers
