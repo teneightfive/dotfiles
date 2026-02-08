@@ -1,0 +1,33 @@
+# Ghostty terminal configuration
+# https://ghostty.org/docs/config
+#
+# Symlink to ~/.config/ghostty/config
+
+# Font - Nerd Fonts are supported by default
+font-family = JetBrainsMono Nerd Font
+font-size = 14
+
+# Theme
+# theme = dark
+
+# Window appearance
+window-padding-x = 10
+window-padding-y = 10
+window-decoration = true
+
+# Quick terminal (dropdown) - toggle with Cmd+`
+keybind = global:cmd+grave_accent=toggle_quick_terminal
+
+# macOS specific
+macos-option-as-alt = true
+macos-titlebar-style = tabs
+
+# Clipboard
+clipboard-read = allow
+clipboard-write = allow
+
+# Shell integration
+shell-integration = zsh
+
+# Scrollback
+scrollback-limit = 10000

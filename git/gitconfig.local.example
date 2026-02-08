@@ -1,0 +1,17 @@
+# Machine-specific Git configuration
+# Copy this file to ~/.gitconfig.local and customize for this machine
+#
+# This file is automatically included by ~/.gitconfig
+
+[user]
+    # Your GPG signing key for this machine
+    # Find with: gpg --list-secret-keys --keyid-format LONG
+    signingkey = YOUR_GPG_KEY_HERE
+
+# Optional: Override email for work machine
+# [user]
+#     email = dom@work-company.com
+
+# Optional: Machine-specific settings
+# [core]
+#     sshCommand = ssh -i ~/.ssh/id_ed25519_work

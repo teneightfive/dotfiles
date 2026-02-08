@@ -2,6 +2,10 @@
 	name = Dom Smith
 	email = dom@teneightfive.com
 
+[include]
+	# Machine-specific config (GPG key, alternate email, etc.)
+	path = ~/.gitconfig.local
+
 [alias]
   ############ ADD ############
   a = add
@@ -42,7 +46,7 @@
   p = push
   pt = push --tags
   pu = push --set-upstream
-  pf = push --force
+  pf = push --force-with-lease
   ############ PULL ############
   pl = pull
   ############ REMOTES ############
@@ -69,58 +73,65 @@
   ############ MISC ############
   undo = reset --soft HEAD@{1}
 
+[init]
+	defaultBranch = main
+
 [push]
-  default = upstream
+	default = current
 
 [pull]
-  rebase = true
+	rebase = true
 
-[color]
-  ui = auto
-
-[color "branch"]
-  current = green
-  local = red
-  remote = yellow
-  plain = magenta
-
-[color "decorate"]
-  branch = green
-  remoteBranch = yellow
-  tag = cyan
-  stash = blue
-  HEAD = magenta
-
-[color "diff"]
-  plain = normal
-  frag = blue
-  old = red
-  new = green
-  commit = green bold
-
-[github]
-  user = teneightfive
-
-[core]
-	excludesfile = /Users/dom/.gitignore_global
-  editor = code --wait
-
-[difftool "sourcetree"]
-	cmd = opendiff \"$LOCAL\" \"$REMOTE\"
-	path =
-
-[mergetool "sourcetree"]
-	cmd = /Applications/SourceTree.app/Contents/Resources/opendiff-w.sh \"$LOCAL\" \"$REMOTE\" -ancestor \"$BASE\" -merge \"$MERGED\"
-	trustExitCode = true
-
-[filter "media"]
-  clean = git media clean %f
-  smudge = git media smudge %f
-  required = true
+[fetch]
+	prune = true
 
 [commit]
-  gpgsign = true
-	template = /Users/dom/.stCommitMsg
+	gpgsign = true
 
 [gpg]
-  program = gpg
+	format = ssh
+
+[core]
+	excludesfile = ~/.gitignore_global
+	editor = code --wait
+	pager = delta
+
+[interactive]
+	diffFilter = delta --color-only
+
+[delta]
+	navigate = true
+	line-numbers = true
+	side-by-side = false
+
+[merge]
+	conflictstyle = diff3
+
+[diff]
+	colorMoved = default
+
+[color]
+	ui = auto
+
+[color "branch"]
+	current = green
+	local = red
+	remote = yellow
+	plain = magenta
+
+[color "decorate"]
+	branch = green
+	remoteBranch = yellow
+	tag = cyan
+	stash = blue
+	HEAD = magenta
+
+[color "diff"]
+	plain = normal
+	frag = blue
+	old = red
+	new = green
+	commit = green bold
+
+[github]
+	user = teneightfive

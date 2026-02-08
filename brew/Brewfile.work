@@ -1,0 +1,18 @@
+# Brewfile.work - Work machine packages
+# Usage: brew bundle --file=~/dotfiles/Brewfile.work
+#
+# This file includes the base Brewfile and adds work-specific tools
+
+# Include base packages
+instance_eval File.read("#{__dir__}/Brewfile")
+
+# Development tools
+brew 'kubernetes-cli'
+brew 'orbstack'
+
+# Add work-specific tools below as needed
+# Examples:
+# brew 'awscli'
+# brew 'terraform'
+# cask 'zoom'
+# cask '1password'

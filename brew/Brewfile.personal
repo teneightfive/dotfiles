@@ -1,0 +1,41 @@
+# Brewfile.personal - Personal machine packages
+# Usage: brew bundle --file=~/dotfiles/Brewfile.personal
+#
+# This file includes the base Brewfile and adds personal apps
+
+# Include base packages
+instance_eval File.read("#{__dir__}/Brewfile")
+
+# Browsers
+cask 'brave-browser'
+
+# Shell & Terminal
+cask 'iterm2'
+
+# Development
+cask 'docker-desktop'
+
+# Personal productivity
+cask 'authy'
+cask 'flux-app'
+cask 'google-drive'
+cask 'keybase'
+cask 'shift'
+
+# Security
+cask 'gpg-suite'
+
+# Design
+cask 'adobe-creative-cloud'
+
+# Media & Entertainment
+cask 'spotify'
+cask 'zwift'
+brew 'yt-dlp'
+
+# Document processing
+brew 'pandoc'
+brew 'weasyprint'
+
+# Cloud tools
+brew 'heroku'

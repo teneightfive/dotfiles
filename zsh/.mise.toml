@@ -1,0 +1,13 @@
+# mise configuration for runtime version management
+# https://mise.jdx.dev/
+#
+# Note: Node.js is managed by Volta, not mise
+# This file handles Ruby and Python only
+
+[tools]
+ruby = "4.0"
+python = "3.12"
+
+[settings]
+# Automatically install missing tools when entering directory
+auto_install = true

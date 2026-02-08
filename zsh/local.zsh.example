@@ -1,0 +1,16 @@
+# Machine-specific Zsh configuration
+# Copy this file to ~/.zshrc.local and customize for this machine
+#
+# This file is sourced at the beginning of ~/.zshrc
+
+# Example: Machine-specific PATH additions
+# export PATH="/custom/path/bin:$PATH"
+
+# Example: Work-specific environment variables
+# export WORK_API_KEY="xxx"
+
+# Example: Different default Node version for this machine
+# volta install node@18
+
+# Example: Machine-specific aliases
+# alias vpn="open /Applications/Company\ VPN.app"

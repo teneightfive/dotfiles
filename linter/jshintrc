@@ -1,7 +1,0 @@
-{
-  "globals": {
-    "require": false,
-    "exports": false,
-    "module": false
-  }
-}
