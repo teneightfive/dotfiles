@@ -27,6 +27,9 @@ source $ZSH/oh-my-zsh.sh
 # Source custom functions
 source ~/dotfiles/zsh/functions.zsh
 
+# Bin directory for user scripts
+export PATH="$HOME/bin:$PATH"
+
 # Editor
 export EDITOR="code"
 

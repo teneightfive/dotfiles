@@ -2,3 +2,6 @@ rbenv/shims
 rbenv/version
 rbenv/versions
 bundle/cache
+
+# T&T OpenAPI Updater (oau)
+bin/oau
