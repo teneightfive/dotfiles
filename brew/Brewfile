@@ -27,6 +27,7 @@ brew 'git-crypt'
 brew 'git-extras'
 brew 'git-lfs'
 brew 'git-delta'
+brew 'gh'
 
 # Runtime managers
 brew 'mise'
