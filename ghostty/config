@@ -16,7 +16,7 @@ window-padding-y = 10
 window-decoration = true
 
 # Quick terminal (dropdown) - toggle with Cmd+`
-keybind = global:cmd+grave_accent=toggle_quick_terminal
+keybind = global:opt+grave_accent=toggle_quick_terminal
 
 # macOS specific
 macos-option-as-alt = true

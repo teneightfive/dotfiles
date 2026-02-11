@@ -54,6 +54,7 @@ cask 'dash'
 cask '1password'
 cask '1password-cli'
 cask 'moom'
+cask 'wispr-flow'
 
 # Development
 cask 'claude-code'
