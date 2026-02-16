@@ -15,6 +15,7 @@ cask 'iterm2'
 # Development
 cask 'docker-desktop'
 cask 'ngrok'
+cask 'claude'
 
 # Design
 cask 'sketch'
