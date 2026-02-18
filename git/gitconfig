@@ -2,6 +2,9 @@
 	name = Dom Smith
 	email = dom@teneightfive.com
 
+[github]
+	user = teneightfive
+
 [include]
 	# Machine-specific config (GPG key, alternate email, etc.)
 	path = ~/.gitconfig.local
@@ -132,6 +135,3 @@
 	old = red
 	new = green
 	commit = green bold
-
-[github]
-	user = teneightfive
