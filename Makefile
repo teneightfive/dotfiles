@@ -59,6 +59,9 @@ symlinks:
 	@ln -sf $(DIR)/zsh/starship.toml ~/.config/starship.toml
 	@mkdir -p ~/.config/ghostty
 	@ln -sf $(DIR)/ghostty/config ~/.config/ghostty/config
+	@ln -sf $(DIR)/opencode/opencode.json ~/.config/opencode/opencode.json
+	@ln -sf $(DIR)/opencode/OPENCODE.md ~/.config/opencode/OPENCODE.md
+	@ln -sf $(DIR)/opencode/agents ~/.config/opencode/agents
 
 # Local config setup (only creates if doesn't exist)
 local-config:

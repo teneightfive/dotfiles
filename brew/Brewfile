@@ -63,6 +63,7 @@ cask 'visual-studio-code'
 cask 'medis'
 cask 'postman'
 brew 'direnv'
+brew 'anomalyco/tap/opencode'
 
 # Design
 cask 'figma'
