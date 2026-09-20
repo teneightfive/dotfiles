@@ -73,3 +73,5 @@ local.Procfile
 # Local bundle #
 ######################
 .bundle/
+
+**/.claude/settings.local.json

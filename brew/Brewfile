@@ -4,6 +4,7 @@
 #
 # Direct usage: brew bundle --file=~/dotfiles/Brewfile
 tap 'heroku/brew'
+tap 'anomalyco/tap'
 
 # Shell & Terminal
 brew 'bash'
@@ -62,8 +63,11 @@ cask 'cursor'
 cask 'visual-studio-code'
 cask 'medis'
 cask 'postman'
+brew 'herdr'
 brew 'direnv'
 brew 'anomalyco/tap/opencode'
+brew 'lazygit'
+brew 'hunk'
 
 # Design
 cask 'figma'
