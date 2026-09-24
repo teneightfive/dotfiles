@@ -13,6 +13,8 @@ brew 'zsh'
 brew 'starship'
 brew 'zoxide'
 cask 'ghostty'
+brew 'lazygit'
+brew 'herdr'
 
 # Modern CLI tools
 brew 'bat'
@@ -56,18 +58,20 @@ cask '1password'
 cask '1password-cli'
 cask 'moom'
 cask 'wispr-flow'
+cask 'caffeine'
 
 # Development
+cask 'claude'
 cask 'claude-code'
 cask 'cursor'
+cask 'docker-desktop'
 cask 'visual-studio-code'
 cask 'medis'
 cask 'postman'
-brew 'herdr'
 brew 'direnv'
 brew 'anomalyco/tap/opencode'
-brew 'lazygit'
 brew 'hunk'
+cask 'ngrok'
 
 # Design
 cask 'figma'

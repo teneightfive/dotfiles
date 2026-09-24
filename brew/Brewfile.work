@@ -7,9 +7,9 @@
 instance_eval File.read("#{__dir__}/Brewfile")
 
 # Development tools
-brew 'kubernetes-cli'
-brew 'gemini-cli'
-cask 'orbstack'
+# brew 'kubernetes-cli'
+# brew 'gemini-cli'
+# cask 'orbstack'
 
 # Add work-specific tools below as needed
 # Examples:

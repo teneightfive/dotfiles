@@ -9,20 +9,11 @@ instance_eval File.read("#{__dir__}/Brewfile")
 # Browsers
 cask 'brave-browser'
 
-# Shell & Terminal
-cask 'iterm2'
-
-# Development
-cask 'docker-desktop'
-cask 'ngrok'
-cask 'claude'
-
 # Design
 cask 'sketch'
 
 # Personal productivity
 cask 'authy'
-cask 'caffeine'
 cask 'flux-app'
 cask 'google-drive'
 cask 'keybase'
