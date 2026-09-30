@@ -24,7 +24,7 @@ ensure_brew:
 
 brew: ensure_brew
 	@echo "Installing Homebrew packages (profile: $(BREW_PROFILE))..."
-	brew bundle --file=$(DIR)/brew/Brewfile.$(BREW_PROFILE)
+	brew bundle --verbose --file=$(DIR)/brew/Brewfile.$(BREW_PROFILE)
 
 # Volta for Node.js
 volta:

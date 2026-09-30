@@ -13,11 +13,11 @@ cask 'brave-browser'
 cask 'sketch'
 
 # Personal productivity
-cask 'authy'
+# cask 'authy' # deprecated
 cask 'flux-app'
 cask 'google-drive'
 cask 'keybase'
-cask 'shift'
+# cask 'shift' # deprecated
 cask 'evernote'
 cask 'imageoptim'
 cask 'notion'
@@ -33,11 +33,8 @@ cask 'adobe-creative-cloud'
 # Media & Entertainment
 cask 'spotify'
 cask 'zwift'
-brew 'yt-dlp'
+# brew 'yt-dlp' # not used
 
 # Document processing
 brew 'pandoc'
 brew 'weasyprint'
-
-# Cloud tools
-brew 'heroku'
