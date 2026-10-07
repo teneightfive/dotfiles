@@ -24,6 +24,9 @@ plugins=(dotenv git kubectl npm sudo zsh-autosuggestions vscode)
 # Load Oh My Zsh
 source $ZSH/oh-my-zsh.sh
 
+# Remove clashing `gsd` git alias
+unalias gsd 2>/dev/null
+
 # Source custom functions
 source ~/dotfiles/zsh/functions.zsh
 
