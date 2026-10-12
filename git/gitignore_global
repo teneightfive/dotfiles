@@ -66,12 +66,9 @@ local.Procfile
 ######################
 .imdone/
 
-# NVM Config #
-######################
-.nvmrc
-
 # Local bundle #
 ######################
 .bundle/
 
 **/.claude/settings.local.json
+**/.claude/worktrees/
